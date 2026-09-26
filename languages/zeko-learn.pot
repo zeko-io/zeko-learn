@@ -1,0 +1,3171 @@
+# Copyright (C) 2026 Zeko Team
+# This file is distributed under the GNU General Public License v2.0+.
+msgid ""
+msgstr ""
+"Project-Id-Version: zeko-learn 1.0.0\n"
+"Report-Msgid-Bugs-To: https://zeko.io\n"
+"POT-Creation-Date: 2026-09-25 08:10+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language-Team: Zeko Team\n"
+"X-Domain: zeko-learn\n"
+"X-Generator: zeko make-pot\n"
+
+#. translators: 1: user display name. 2: course title
+#: includes/class-zeko-learn-ajax.php:1045
+#, php-format
+msgid "%1$s enrolled in %2$s"
+msgstr ""
+
+#. translators: 1: student name, 2: course title
+#: templates/certificate.php:27
+#, php-format
+msgid "%1$s has completed %2$s — verify this certificate."
+msgstr ""
+
+#. translators: 1: completion percentage. 2: course title
+#: includes/class-zeko-learn-ajax.php:1051
+#, php-format
+msgid "%1$s%% completed in %2$s"
+msgstr ""
+
+#. translators: %s: course category name
+#: templates/catalog.php:92 templates/catalog.php:100
+#, php-format
+msgid "%s Courses"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:374
+msgid "&mdash; Select &mdash;"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1107
+msgid "(0 = no limit)"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1109
+msgid "(0 = unlimited)"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:435
+#: includes/admin/class-zeko-learn-admin.php:463
+msgid "+ Add Lesson"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1171
+msgid "+ Add Question"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:467
+msgid "+ Add Section"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:352
+msgid "1. Basic Info"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:353
+msgid "2. Curriculum"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:354
+msgid "3. Pricing"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:355
+msgid "4. Media"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:356
+msgid "5. SEO & Details"
+msgstr ""
+
+#. translators: 1: author display name. 2: discussion post title
+#: includes/class-zeko-learn-emails.php:288
+#, php-format
+msgid ""
+"<strong>%1$s</strong> replied to your discussion post <strong>%2$s</strong>."
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:188
+msgid "Abandon this goal?"
+msgstr ""
+
+#: templates/student-dashboard.php:95 templates/student-dashboard.php:359
+msgid "Academic Studies"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:678
+#: templates/instructor-dashboard.php:318
+msgid "Action"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:268
+#: includes/admin/class-zeko-learn-admin.php:567
+#: includes/admin/class-zeko-learn-admin.php:1064
+#: includes/admin/class-zeko-learn-admin.php:1297
+msgid "Actions"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1335
+msgid "Add Assignment"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:554
+#: includes/admin/class-zeko-learn-admin.php:610
+msgid "Add Category"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:80
+msgid "Add Course"
+msgstr ""
+
+#: templates/instructor-dashboard.php:694
+msgid "Add Lesson"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:236
+msgid "Add New"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:194
+#: includes/admin/class-zeko-learn-admin.php:341
+msgid "Add New Course"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1095
+msgid "Add Quiz"
+msgstr ""
+
+#: templates/instructor-dashboard.php:701
+msgid "Add Section"
+msgstr ""
+
+#: templates/lesson.php:287
+msgid "Add any notes about your submission..."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:763
+msgid "Added to wishlist."
+msgstr ""
+
+#: templates/catalog.php:122 templates/instructor-dashboard.php:609
+#: templates/instructor-dashboard.php:1152 templates/student-dashboard.php:368
+msgid "Advanced"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:947 templates/catalog.php:128
+#: templates/catalog.php:148
+msgid "All"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:677
+#: templates/student-dashboard.php:182
+msgid "All Courses"
+msgstr ""
+
+#: templates/catalog.php:119 templates/instructor-dashboard.php:610
+msgid "All Levels"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:245
+msgid "All Statuses"
+msgstr ""
+
+#: templates/instructor-dashboard.php:307
+msgid "All caught up! No pending submissions."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:2084
+msgid "All demo data cleared."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:1539
+msgid "All fields are required."
+msgstr ""
+
+#: includes/class-zeko-learn-embeds.php:99
+msgid "Allow external video embeds (YouTube/Vimeo)"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1360
+msgid "Allowed File Types"
+msgstr ""
+
+#: templates/lesson.php:244
+msgid "Allowed File Types:"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:160
+#: includes/class-zeko-learn-ajax.php:249
+msgid "Already enrolled."
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:800
+#: templates/instructor-dashboard.php:1004
+msgid "Amount"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:185
+msgid "An error occurred."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:1590
+msgid "Announcement deleted."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:1622
+msgid "Announcement pinned."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:1568
+#: includes/public/class-zeko-learn-public.php:184
+msgid "Announcement posted."
+msgstr ""
+
+#: templates/instructor-dashboard.php:1358
+msgid "Announcement title"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:1622
+msgid "Announcement unpinned."
+msgstr ""
+
+#: templates/instructor-dashboard.php:277
+msgid "Announcements"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:288
+msgid "Answers"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:110
+msgid ""
+"Are you sure you want to delete this course? This action cannot be undone."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:109
+#: includes/public/class-zeko-learn-public.php:194
+msgid "Are you sure you want to delete this?"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:193
+msgid "Are you sure?"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:457
+#: templates/instructor-dashboard.php:315
+#: templates/instructor-dashboard.php:675
+#: templates/instructor-dashboard.php:1318
+msgid "Assignment"
+msgstr ""
+
+#: includes/class-zeko-learn-emails.php:242
+msgid "Assignment Graded"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:326
+msgid "Assignment ID"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1262
+msgid "Assignment deleted."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:515
+msgid "Assignment graded."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1265
+msgid "Assignment saved."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:491
+msgid "Assignment submitted!"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:84
+#: includes/admin/class-zeko-learn-admin.php:1295
+msgid "Assignments"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:129
+msgid "Authentication required."
+msgstr ""
+
+#: templates/instructor-dashboard.php:978
+msgid "Avg / Student"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:1225
+#: templates/instructor-dashboard.php:233 templates/single-course.php:361
+msgid "Avg Rating"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1398
+msgid "Back to Assignments"
+msgstr ""
+
+#: templates/certificate.php:135
+msgid "Back to Home"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1233
+msgid "Bank Transfer"
+msgstr ""
+
+#: templates/instructor-dashboard.php:533
+msgid "Basic Info"
+msgstr ""
+
+#: templates/catalog.php:120 templates/instructor-dashboard.php:607
+#: templates/instructor-dashboard.php:1150 templates/student-dashboard.php:366
+msgid "Beginner"
+msgstr ""
+
+#: templates/student-dashboard.php:336
+msgid "Bio"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1122
+msgid "Bio / About"
+msgstr ""
+
+#: templates/instructor-dashboard.php:570
+#: templates/instructor-dashboard.php:797
+#: templates/instructor-dashboard.php:825
+#: templates/instructor-dashboard.php:838
+msgid "Bold"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:590
+#: templates/course-player.php:182 templates/lesson.php:325
+msgid "Bookmark"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:744
+#: includes/public/class-zeko-learn-public.php:178
+msgid "Bookmark removed."
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:177
+msgid "Bookmarked!"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:744
+msgid "Bookmarked."
+msgstr ""
+
+#: templates/instructor-dashboard.php:788
+msgid "Brief description for search engine results"
+msgstr ""
+
+#: templates/student-dashboard.php:462
+msgid "Bright mode"
+msgstr ""
+
+#: includes/class-zeko-learn-ecosystem.php:286
+#: templates/student-dashboard.php:121 templates/student-dashboard.php:265
+#: templates/student-dashboard.php:524
+msgid "Browse Courses"
+msgstr ""
+
+#: templates/student-dashboard.php:264
+msgid "Browse courses and save them for later!"
+msgstr ""
+
+#: templates/student-dashboard.php:523
+msgid "Browse our catalog to get started!"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:400
+msgid "Build your course curriculum by adding sections and lessons."
+msgstr ""
+
+#: templates/instructor-dashboard.php:573
+msgid "Bullet List"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:431
+#: templates/single-course.php:152
+msgid "Buy Now"
+msgstr ""
+
+#: templates/single-course.php:151
+msgid "Buy this course"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:415
+msgid "By"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1331
+#: templates/instructor-dashboard.php:1366
+msgid "Cancel"
+msgstr ""
+
+#: templates/student-dashboard.php:94 templates/student-dashboard.php:358
+msgid "Career Development"
+msgstr ""
+
+#: templates/student-dashboard.php:93 templates/student-dashboard.php:357
+msgid "Casual Learning"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:81
+#: includes/admin/class-zeko-learn-admin.php:161
+#: includes/admin/class-zeko-learn-admin.php:557
+#: includes/admin/class-zeko-learn-admin.php:1518
+msgid "Categories"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:374
+#: templates/instructor-dashboard.php:596
+msgid "Category"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:548
+msgid "Category deleted."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:545
+msgid "Category saved."
+msgstr ""
+
+#: templates/certificate.php:20 templates/certificate.php:24
+msgid "Certificate"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:771
+#: includes/public/class-zeko-learn-public.php:819
+msgid "Certificate #"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:668
+#: includes/public/class-zeko-learn-public.php:861 templates/certificate.php:72
+msgid "Certificate Not Found"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:814
+msgid "Certificate Number Prefix"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:677 templates/certificate.php:99
+msgid "Certificate Number:"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:851
+msgid "Certificate Verified"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:510
+#: includes/public/class-zeko-learn-public.php:869
+msgid "Certificate number"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:672 templates/certificate.php:89
+msgid "Certificate of Completion"
+msgstr ""
+
+#: templates/single-course.php:163
+msgid "Certificate of completion"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:85
+#: includes/admin/class-zeko-learn-admin.php:765
+#: includes/class-zeko-learn-ecosystem.php:294
+#: templates/student-dashboard.php:162 templates/student-dashboard.php:191
+msgid "Certificates"
+msgstr ""
+
+#: templates/instructor-dashboard.php:763
+msgid "Choose Image"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1503
+msgid "Clear All Demo Data"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1498
+msgid "Clear Demo Data"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1310
+#: templates/instructor-dashboard.php:1345
+msgid "Close"
+msgstr ""
+
+#: templates/student-dashboard.php:220
+msgid "Complete courses to earn certificates!"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:693
+#: templates/course-player.php:175 templates/lesson.php:317
+#: templates/student-dashboard.php:144 templates/student-dashboard.php:188
+msgid "Completed"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:162
+#: includes/privacy/class-zeko-learn-privacy.php:208
+#: includes/privacy/class-zeko-learn-privacy.php:296
+msgid "Completed at"
+msgstr ""
+
+#. translators: %s: course title
+#: includes/class-zeko-learn-ecosystem.php:358
+#, php-format
+msgid "Completed course: %s"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:172
+msgid "Completed!"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:242
+msgid "Completion"
+msgstr ""
+
+#: includes/class-zeko-learn-emails.php:166
+msgid "Congratulations! Course Completed"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:189
+msgid "Congratulations! You completed the course!"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:438
+#: includes/privacy/class-zeko-learn-privacy.php:556
+#: templates/instructor-dashboard.php:1361
+msgid "Content"
+msgstr ""
+
+#: templates/student-dashboard.php:572
+msgid "Continue"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:429
+#: templates/single-course.php:149
+msgid "Continue Learning"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1162
+msgid "Correct Answer:"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:690
+#: includes/admin/class-zeko-learn-admin.php:770
+#: includes/admin/class-zeko-learn-admin.php:1064
+#: includes/admin/class-zeko-learn-admin.php:1297
+#: includes/public/class-zeko-learn-public.php:819
+#: templates/instructor-dashboard.php:316
+#: templates/instructor-dashboard.php:380
+#: templates/instructor-dashboard.php:1003
+#: templates/instructor-dashboard.php:1349 templates/single-course.php:86
+msgid "Course"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1039 templates/student-dashboard.php:413
+msgid "Course Announcements"
+msgstr ""
+
+#: templates/catalog.php:92 templates/catalog.php:100
+msgid "Course Catalog"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1202 templates/student-dashboard.php:405
+msgid "Course Completion"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1346
+#: includes/privacy/class-zeko-learn-privacy.php:150
+#: includes/privacy/class-zeko-learn-privacy.php:196
+#: includes/privacy/class-zeko-learn-privacy.php:238
+#: includes/privacy/class-zeko-learn-privacy.php:330
+#: includes/privacy/class-zeko-learn-privacy.php:384
+#: includes/privacy/class-zeko-learn-privacy.php:426
+#: includes/privacy/class-zeko-learn-privacy.php:506
+#: includes/privacy/class-zeko-learn-privacy.php:552
+#: includes/privacy/class-zeko-learn-privacy.php:598
+#: includes/privacy/class-zeko-learn-privacy.php:632
+#: includes/privacy/class-zeko-learn-privacy.php:720
+#: includes/privacy/class-zeko-learn-privacy.php:796
+#: includes/privacy/class-zeko-learn-privacy.php:842
+msgid "Course ID"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:1795
+msgid "Course ID and title are required."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:1844
+msgid "Course ID, section ID, and title are required."
+msgstr ""
+
+#: templates/course-player.php:74
+msgid "Course Page"
+msgstr ""
+
+#: templates/instructor-dashboard.php:741
+msgid "Course Thumbnail"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:362
+#: templates/instructor-dashboard.php:557
+msgid "Course Title"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:1774
+msgid "Course created."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:209
+msgid "Course deleted."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:1462
+msgid "Course duplicated."
+msgstr ""
+
+#: templates/single-course.php:174
+msgid "Course information"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:155
+#: includes/class-zeko-learn-ajax.php:240
+msgid "Course not available."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:1418
+#: includes/class-zeko-learn-ecosystem.php:183
+#: includes/public/class-zeko-learn-public.php:1148
+msgid "Course not found."
+msgstr ""
+
+#: includes/class-zeko-learn-ecosystem.php:243
+msgid "Course refunded and access removed."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:223
+msgid "Course refunded."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:212
+#: includes/admin/class-zeko-learn-admin.php:333
+#: includes/class-zeko-learn-ajax.php:1774
+msgid "Course saved."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:1343
+msgid "Course status updated."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:79
+#: includes/admin/class-zeko-learn-admin.php:235
+#: includes/class-zeko-learn-ecosystem.php:304
+#: includes/public/class-zeko-learn-public.php:1223
+#: templates/instructor-dashboard.php:265 templates/single-course.php:359
+#: zeko-learn.php:89
+msgid "Courses"
+msgstr ""
+
+#: includes/class-zeko-learn-ecosystem.php:385
+msgid "Courses Completed"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:1229
+msgid "Courses by"
+msgstr ""
+
+#: templates/instructor-dashboard.php:268
+msgid "Create"
+msgstr ""
+
+#: templates/instructor-dashboard.php:872
+msgid "Create Course"
+msgstr ""
+
+#: templates/instructor-dashboard.php:523
+msgid "Create New Course"
+msgstr ""
+
+#: templates/instructor-dashboard.php:446
+msgid "Create Your First Course"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:396
+#: includes/privacy/class-zeko-learn-privacy.php:442
+#: includes/privacy/class-zeko-learn-privacy.php:560
+#: includes/privacy/class-zeko-learn-privacy.php:602
+#: includes/privacy/class-zeko-learn-privacy.php:690
+#: includes/privacy/class-zeko-learn-privacy.php:724
+#: includes/privacy/class-zeko-learn-privacy.php:854
+msgid "Created at"
+msgstr ""
+
+#: templates/single-course.php:119
+msgid "Created by"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1488
+msgid ""
+"Creates 5 instructors, 25 students, 10 courses with full curriculum, and "
+"related data."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:811
+msgid "Currency Symbol"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1509
+msgid "Current Status"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:754
+msgid "Current streak"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:442
+#: templates/instructor-dashboard.php:536 templates/single-course.php:176
+msgid "Curriculum"
+msgstr ""
+
+#: templates/instructor-dashboard.php:783
+msgid "Custom title for search engines"
+msgstr ""
+
+#: templates/student-dashboard.php:373
+msgid "Daily Learning Goal (minutes)"
+msgstr ""
+
+#: templates/student-dashboard.php:469
+msgid "Dark"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:78
+msgid "Dashboard"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:173
+#: includes/admin/class-zeko-learn-admin.php:267
+#: templates/instructor-dashboard.php:1007
+msgid "Date"
+msgstr ""
+
+#: templates/certificate.php:100
+msgid "Date of Issue:"
+msgstr ""
+
+#: templates/student-dashboard.php:172
+msgid "Day Streak"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1148
+msgid "Default Course Level"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:812
+msgid "Default Passing Score (%)"
+msgstr ""
+
+#: templates/instructor-dashboard.php:784
+msgid "Defaults to course title if empty."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:291
+#: includes/admin/class-zeko-learn-admin.php:586
+#: includes/admin/class-zeko-learn-admin.php:1077
+#: templates/instructor-dashboard.php:661
+#: templates/instructor-dashboard.php:686
+#: templates/instructor-dashboard.php:1076
+msgid "Delete"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:115
+msgid "Deleted"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1512
+msgid "Demo Courses"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:87
+#: includes/admin/class-zeko-learn-admin.php:1482
+msgid "Demo Data"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1514
+msgid "Demo Instructors"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1516
+msgid "Demo Students"
+msgstr ""
+
+#. translators: 1: categories, 2: skills, 3: courses, 4: enrollments
+#: includes/class-zeko-learn-ajax.php:2063
+#, php-format
+msgid ""
+"Demo data generated: %1$d categories, %2$d skills, %3$d courses, %4$d "
+"enrollments."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:364
+#: includes/admin/class-zeko-learn-admin.php:565
+#: includes/admin/class-zeko-learn-admin.php:606
+#: includes/admin/class-zeko-learn-admin.php:1106
+#: includes/public/class-zeko-learn-public.php:452
+#: templates/instructor-dashboard.php:567 templates/single-course.php:194
+msgid "Description"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:472
+msgid "Discussion ID"
+msgstr ""
+
+#: templates/student-dashboard.php:421
+msgid "Discussion Replies"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:605
+msgid "Discussion created."
+msgstr ""
+
+#: templates/instructor-dashboard.php:1112 templates/student-dashboard.php:331
+msgid "Display Name"
+msgstr ""
+
+#: templates/student-dashboard.php:442
+msgid "Display Preferences"
+msgstr ""
+
+#: templates/instructor-dashboard.php:660
+#: templates/instructor-dashboard.php:685
+msgid "Down"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1410
+msgid "Download"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:646
+#: templates/course-player.php:162
+msgid "Download Attachment"
+msgstr ""
+
+#: templates/lesson.php:300
+msgid "Download File"
+msgstr ""
+
+#: templates/certificate.php:129 templates/certificate.php:159
+msgid "Download PDF"
+msgstr ""
+
+#: templates/instructor-dashboard.php:627
+msgid "Draft"
+msgstr ""
+
+#: templates/lesson.php:281
+msgid "Drag & drop your file here or click to browse"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1297
+#: includes/admin/class-zeko-learn-admin.php:1361
+msgid "Due Date"
+msgstr ""
+
+#: templates/lesson.php:247
+msgid "Due Date:"
+msgstr ""
+
+#: templates/student-dashboard.php:470
+msgid "Easy on eyes"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:290
+#: includes/admin/class-zeko-learn-admin.php:585
+#: includes/admin/class-zeko-learn-admin.php:1077
+#: includes/admin/class-zeko-learn-admin.php:1311
+#: templates/instructor-dashboard.php:485
+msgid "Edit"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1335
+msgid "Edit Assignment"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:554
+msgid "Edit Category"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:341
+#: templates/instructor-dashboard.php:523
+msgid "Edit Course"
+msgstr ""
+
+#: templates/instructor-dashboard.php:198
+msgid "Edit Profile"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1095
+msgid "Edit Quiz"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:689
+msgid "Email"
+msgstr ""
+
+#: templates/student-dashboard.php:397
+msgid "Email Notifications"
+msgstr ""
+
+#. translators: %s: help text
+#: includes/class-zeko-learn-embeds.php:102
+msgid ""
+"Embedding lesson videos on YouTube or Vimeo streams data to those third "
+"parties. Keep the privacy-enhanced domain enabled and disclose this in your "
+"privacy policy."
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:431 templates/lesson.php:164
+#: templates/single-course.php:152
+msgid "Enroll Now"
+msgstr ""
+
+#: templates/single-course.php:151
+msgid "Enroll in this course"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:615 templates/lesson.php:162
+msgid "Enroll in this course to access this lesson."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:692
+#: templates/instructor-dashboard.php:383 templates/student-dashboard.php:135
+msgid "Enrolled"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:158
+msgid "Enrolled at"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:171
+msgid "Enrolled!"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:82
+#: includes/admin/class-zeko-learn-admin.php:160
+#: includes/admin/class-zeko-learn-admin.php:171
+#: includes/admin/class-zeko-learn-admin.php:264
+#: includes/admin/class-zeko-learn-admin.php:670
+#: includes/admin/class-zeko-learn-admin.php:1520
+#: templates/instructor-dashboard.php:971
+msgid "Enrollments"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:869
+msgid "Enter certificate number"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:114
+msgid "Error occurred"
+msgstr ""
+
+#: templates/instructor-dashboard.php:618
+msgid "Est. Hours"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:387
+msgid "Estimated Hours"
+msgstr ""
+
+#: templates/instructor-dashboard.php:677
+msgid "Estimated minutes"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1117
+msgid "Expertise / Specialization"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1157
+msgid "Explanation (shown after quiz):"
+msgstr ""
+
+#: templates/instructor-dashboard.php:365
+#: templates/instructor-dashboard.php:891
+msgid "Export CSV"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:394
+msgid "Featured"
+msgstr ""
+
+#: templates/instructor-dashboard.php:635
+msgid "Featured Course"
+msgstr ""
+
+#: templates/instructor-dashboard.php:637
+msgid "Featured courses are highlighted on the catalog page."
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:350
+#: templates/instructor-dashboard.php:1326
+msgid "Feedback"
+msgstr ""
+
+#: includes/class-zeko-learn-emails.php:252 templates/lesson.php:268
+msgid "Feedback:"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1401
+msgid "File"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:334
+msgid "File URL"
+msgstr ""
+
+#. translators: %d: max file size in MB
+#: includes/class-zeko-learn-ajax.php:471
+#, php-format
+msgid "File too large. Maximum %d MB."
+msgstr ""
+
+#. translators: %s: allowed file types
+#: includes/class-zeko-learn-ajax.php:448
+#, php-format
+msgid "File type not allowed. Allowed: %s"
+msgstr ""
+
+#: templates/catalog.php:143
+msgid "Filter"
+msgstr ""
+
+#: templates/catalog.php:106
+msgid "Filter courses"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:287
+#: includes/public/class-zeko-learn-public.php:419
+#: includes/public/class-zeko-learn-public.php:1260 templates/catalog.php:129
+#: templates/catalog.php:177 templates/catalog.php:203
+#: templates/instructor-dashboard.php:478 templates/single-course.php:139
+#: templates/student-dashboard.php:289
+msgid "Free"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:473
+#: templates/instructor-dashboard.php:713
+msgid "Free Course"
+msgstr ""
+
+#: templates/instructor-dashboard.php:678
+msgid "Free preview"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1487
+#: includes/admin/class-zeko-learn-admin.php:1492
+msgid "Generate Demo Data"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1483
+msgid ""
+"Generate realistic demo data for testing the LMS. This will create "
+"instructors, students, courses with curriculum, enrollments, quiz attempts, "
+"reviews, discussions, announcements, certificates, and payouts."
+msgstr ""
+
+#: templates/certificate.php:150
+msgid "Generating..."
+msgstr ""
+
+#: templates/student-dashboard.php:414
+msgid "Get notified about new announcements from instructors."
+msgstr ""
+
+#: templates/instructor-dashboard.php:1195
+msgid "Get notified when a student asks a question."
+msgstr ""
+
+#: templates/instructor-dashboard.php:1203
+msgid "Get notified when a student completes your course."
+msgstr ""
+
+#: templates/instructor-dashboard.php:1179
+msgid "Get notified when a student enrolls in your course."
+msgstr ""
+
+#: templates/instructor-dashboard.php:1187
+msgid "Get notified when a student leaves a review."
+msgstr ""
+
+#: templates/student-dashboard.php:422
+msgid "Get notified when someone replies to your discussion post."
+msgstr ""
+
+#: templates/student-dashboard.php:406
+msgid "Get notified when you complete a course."
+msgstr ""
+
+#: templates/instructor-dashboard.php:1282
+msgid "GitHub"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:636
+msgid "Goal"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:1654
+#: includes/public/class-zeko-learn-public.php:182
+msgid "Goal set!"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:1678
+#: includes/public/class-zeko-learn-public.php:183
+msgid "Goal updated."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1401
+#: includes/privacy/class-zeko-learn-privacy.php:346
+#: templates/instructor-dashboard.php:1322
+msgid "Grade"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1309
+msgid "Grade Submission"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:1516
+msgid "Grade export ready."
+msgstr ""
+
+#: includes/class-zeko-learn-emails.php:249 templates/lesson.php:266
+msgid "Grade:"
+msgstr ""
+
+#: templates/lesson.php:265
+msgid "Graded"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1358
+msgid "Grading Rubric"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:139
+msgid "Handler not yet implemented."
+msgstr ""
+
+#: includes/class-zeko-learn-emails.php:324
+msgid "Hello,"
+msgstr ""
+
+#. translators: %s: recipient display name
+#: includes/class-zeko-learn-emails.php:132
+#: includes/class-zeko-learn-emails.php:168
+#: includes/class-zeko-learn-emails.php:207
+#: includes/class-zeko-learn-emails.php:244
+#: includes/class-zeko-learn-emails.php:286
+#, php-format
+msgid "Hi %s,"
+msgstr ""
+
+#: templates/catalog.php:138
+msgid "Highest Rated"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1127
+msgid "Hourly Rate (for 1-on-1 consulting)"
+msgstr ""
+
+#: templates/student-dashboard.php:153
+msgid "Hours Learned"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:566
+#: includes/admin/class-zeko-learn-admin.php:607
+msgid "Icon"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1489
+msgid ""
+"If demo data already exists, duplicates may be created. Clear first if "
+"needed."
+msgstr ""
+
+#: templates/student-dashboard.php:185
+msgid "In Progress"
+msgstr ""
+
+#: templates/instructor-dashboard.php:575
+msgid "Insert Link"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1348
+msgid "Instructions"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:169
+#: includes/admin/class-zeko-learn-admin.php:262 templates/certificate.php:115
+#: templates/single-course.php:179
+msgid "Instructor"
+msgstr ""
+
+#: zeko-learn.php:97
+msgid "Instructor Dashboard"
+msgstr ""
+
+#: templates/single-course.php:319
+msgid "Instructor Reply"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:813
+msgid "Instructor Revenue %"
+msgstr ""
+
+#: templates/instructor-dashboard.php:260
+msgid "Instructor dashboard sections"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:1206
+msgid "Instructor not found."
+msgstr ""
+
+#: templates/catalog.php:121 templates/instructor-dashboard.php:608
+#: templates/instructor-dashboard.php:1151 templates/student-dashboard.php:367
+msgid "Intermediate"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:1580
+#: includes/class-zeko-learn-ajax.php:1599
+msgid "Invalid announcement."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:427
+msgid "Invalid assignment."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:150
+#: includes/class-zeko-learn-ajax.php:211
+#: includes/class-zeko-learn-ajax.php:235
+#: includes/class-zeko-learn-ajax.php:529
+#: includes/class-zeko-learn-ajax.php:756
+msgid "Invalid course."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:434
+msgid "Invalid file URL."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:298
+msgid "Invalid lesson."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:692
+#: includes/class-zeko-learn-ajax.php:719
+msgid "Invalid note."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:1356
+#: includes/class-zeko-learn-ajax.php:1368
+#: includes/class-zeko-learn-ajax.php:1385
+#: includes/class-zeko-learn-ajax.php:1396
+msgid "Invalid order data."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:288
+#: includes/class-zeko-learn-ajax.php:335
+#: includes/class-zeko-learn-ajax.php:409
+#: includes/class-zeko-learn-ajax.php:668
+#: includes/class-zeko-learn-ajax.php:737
+#: includes/class-zeko-learn-ajax.php:1303
+#: includes/class-zeko-learn-ajax.php:1336
+#: includes/class-zeko-learn-ajax.php:1668
+msgid "Invalid parameters."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:620
+msgid "Invalid reply."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:652
+msgid "Invalid vote."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:772
+#: includes/public/class-zeko-learn-public.php:819
+msgid "Issued"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:518
+msgid "Issued at"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:678
+msgid "Issued on:"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:853
+#: templates/student-dashboard.php:232
+msgid "Issued:"
+msgstr ""
+
+#: templates/instructor-dashboard.php:571
+#: templates/instructor-dashboard.php:798
+#: templates/instructor-dashboard.php:826
+#: templates/instructor-dashboard.php:839
+msgid "Italic"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:789
+#: includes/public/class-zeko-learn-public.php:949
+#: includes/public/class-zeko-learn-public.php:1032
+msgid "Jobs"
+msgstr ""
+
+#: templates/student-dashboard.php:520
+msgid "Keep learning — you're doing great!"
+msgstr ""
+
+#: includes/class-zeko-learn-emails.php:178
+msgid "Keep up the great work!"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:386
+#: templates/instructor-dashboard.php:614
+msgid "Language"
+msgstr ""
+
+#: templates/student-dashboard.php:569
+msgid "Last accessed:"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:762
+msgid "Last active"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:246
+msgid "Last activity at"
+msgstr ""
+
+#. translators: %s: last updated date
+#: templates/single-course.php:124
+#, php-format
+msgid "Last updated %s"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:785
+#: includes/class-zeko-learn-ecosystem.php:268
+#: includes/class-zeko-learn-ecosystem.php:281
+#: includes/public/class-zeko-learn-public.php:948
+#: includes/public/class-zeko-learn-public.php:1031
+#: templates/course-player.php:64
+msgid "Learn"
+msgstr ""
+
+#: includes/class-zeko-learn-emails.php:90
+msgid "Learn something new, every day."
+msgstr ""
+
+#: templates/instructor-dashboard.php:562
+msgid "Learn web development from scratch"
+msgstr ""
+
+#: templates/student-dashboard.php:354
+msgid "Learning Goal"
+msgstr ""
+
+#: templates/student-dashboard.php:348
+msgid "Learning Preferences"
+msgstr ""
+
+#: templates/instructor-dashboard.php:731
+msgid "Leave empty for no sale."
+msgstr ""
+
+#: templates/instructor-dashboard.php:1132
+msgid "Leave empty if you do not offer consulting."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1347
+#: includes/privacy/class-zeko-learn-privacy.php:192
+#: includes/privacy/class-zeko-learn-privacy.php:430
+#: includes/privacy/class-zeko-learn-privacy.php:548
+#: includes/privacy/class-zeko-learn-privacy.php:594
+msgid "Lesson ID"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:421
+#: includes/admin/class-zeko-learn-admin.php:452
+msgid "Lesson Title"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:112
+msgid "Lesson added"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:314
+msgid "Lesson completed!"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:1872
+msgid "Lesson saved."
+msgstr ""
+
+#: templates/instructor-dashboard.php:669
+msgid "Lesson title"
+msgstr ""
+
+#: includes/class-zeko-learn-embeds.php:75
+msgid "Lesson video"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:1403
+msgid "Lessons reordered."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:380 templates/catalog.php:117
+#: templates/instructor-dashboard.php:605
+msgid "Level"
+msgstr ""
+
+#: templates/student-dashboard.php:461
+msgid "Light"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1264
+msgid "LinkedIn"
+msgstr ""
+
+#: templates/instructor-dashboard.php:817
+msgid "List the key skills and knowledge students will gain."
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:192
+#: includes/public/class-zeko-learn-public.php:957
+#: includes/public/class-zeko-learn-public.php:1017
+msgid "Loading..."
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:434 templates/lesson.php:166
+#: templates/single-course.php:155
+msgid "Log in to Enroll"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:758
+msgid "Longest streak"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:809
+#: includes/public/class-zeko-learn-public.php:954
+#: includes/public/class-zeko-learn-public.php:1037
+msgid "Love"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:958
+msgid "Mark all as read"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:589
+#: templates/course-player.php:176 templates/lesson.php:320
+msgid "Mark as Complete"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:394
+msgid "Mark as featured course"
+msgstr ""
+
+#: templates/course-player.php:171 templates/lesson.php:319
+msgid "Mark lesson as complete"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:187
+msgid "Mark this goal as completed?"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:175
+msgid "Mark this lesson as complete?"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:678
+#: includes/public/class-zeko-learn-public.php:191
+msgid "Marked as best answer."
+msgstr ""
+
+#: templates/student-dashboard.php:398
+msgid "Master switch for all email notifications."
+msgstr ""
+
+#: templates/student-dashboard.php:454
+msgid "Match OS"
+msgstr ""
+
+#: templates/instructor-dashboard.php:789
+msgid "Max 500 characters."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1109
+msgid "Max Attempts"
+msgstr ""
+
+#: templates/lesson.php:213
+msgid "Max Attempts:"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1359
+msgid "Max File Size (MB)"
+msgstr ""
+
+#: templates/lesson.php:241
+msgid "Max File Size:"
+msgstr ""
+
+#: templates/instructor-dashboard.php:542
+msgid "Media"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:801
+#: includes/public/class-zeko-learn-public.php:952
+#: includes/public/class-zeko-learn-public.php:1035
+msgid "Mentor"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:817
+msgid "Messages"
+msgstr ""
+
+#: templates/instructor-dashboard.php:677
+msgid "Min"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:428
+#: includes/admin/class-zeko-learn-admin.php:459
+msgid "Minutes"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:674
+msgid "Module"
+msgstr ""
+
+#: templates/catalog.php:137
+msgid "Most Popular"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:818
+#: templates/student-dashboard.php:212 zeko-learn.php:101
+msgid "My Certificates"
+msgstr ""
+
+#: templates/instructor-dashboard.php:431
+msgid "My Courses"
+msgstr ""
+
+#: includes/class-zeko-learn-ecosystem.php:253
+#: includes/class-zeko-learn-ecosystem.php:290
+#: includes/class-zeko-learn-ecosystem.php:321
+#: includes/public/class-zeko-learn-public.php:786 zeko-learn.php:93
+msgid "My Learning"
+msgstr ""
+
+#: templates/lesson.php:333
+msgid "My Notes"
+msgstr ""
+
+#: templates/instructor-dashboard.php:888
+msgid "My Students"
+msgstr ""
+
+#: templates/student-dashboard.php:256
+msgid "My Wishlist"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:563
+#: includes/admin/class-zeko-learn-admin.php:604
+msgid "Name"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1042
+msgid "New Announcement"
+msgstr ""
+
+#: templates/instructor-dashboard.php:201
+#: templates/instructor-dashboard.php:434
+msgid "New Course"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1178
+msgid "New Enrollment"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1186
+msgid "New Review"
+msgstr ""
+
+#. translators: %s: course title
+#: includes/class-zeko-learn-emails.php:323
+#, php-format
+msgid "New announcement in %s"
+msgstr ""
+
+#. translators: %s: discussion post title
+#: includes/class-zeko-learn-emails.php:284
+#, php-format
+msgid "New reply to: %s"
+msgstr ""
+
+#. translators: %s: course title
+#: includes/class-zeko-learn-ajax.php:1047
+#, php-format
+msgid "New student in %s"
+msgstr ""
+
+#: templates/catalog.php:136
+msgid "Newest"
+msgstr ""
+
+#: templates/lesson.php:224
+msgid "Next"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1049
+msgid "No announcements posted yet."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1300
+msgid "No assignments yet."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:571
+#: includes/public/class-zeko-learn-public.php:1107
+msgid "No categories yet."
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:862
+msgid "No certificate matches that number."
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:815
+msgid "No certificates earned yet."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:776
+msgid "No certificates issued yet."
+msgstr ""
+
+#: templates/student-dashboard.php:219
+msgid "No certificates yet"
+msgstr ""
+
+#: templates/student-dashboard.php:519
+msgid "No completed courses yet"
+msgstr ""
+
+#: includes/class-zeko-learn-ecosystem.php:387
+msgid "No courses completed yet."
+msgstr ""
+
+#: templates/catalog.php:160
+msgid "No courses found matching your criteria."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:273
+msgid "No courses found."
+msgstr ""
+
+#: templates/student-dashboard.php:522
+msgid "No courses here"
+msgstr ""
+
+#: templates/instructor-dashboard.php:443
+msgid "No courses yet"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:177
+msgid "No courses yet."
+msgstr ""
+
+#: templates/single-course.php:228
+msgid "No curriculum available yet."
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:1172
+msgid "No enrolled courses."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:1482
+msgid "No enrollments found."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:697
+msgid "No enrollments yet."
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:718
+msgid "No featured courses."
+msgstr ""
+
+#: templates/course-player.php:123
+msgid "No lessons available"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:593
+msgid "No lessons available."
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:1024
+msgid "No notifications yet"
+msgstr ""
+
+#: templates/instructor-dashboard.php:996
+msgid ""
+"No payouts recorded yet. Payouts are created when students purchase your "
+"courses."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1067
+msgid "No quizzes yet. Create quizzes from the course editor."
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:495
+msgid "No reviews yet."
+msgstr ""
+
+#: templates/single-course.php:327
+msgid "No reviews yet. Be the first to review this course!"
+msgstr ""
+
+#: templates/instructor-dashboard.php:372
+msgid "No students enrolled yet."
+msgstr ""
+
+#: templates/instructor-dashboard.php:900
+msgid "No students yet"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1404
+msgid "No submissions yet."
+msgstr ""
+
+#: templates/instructor-dashboard.php:757
+msgid "No thumbnail set"
+msgstr ""
+
+#: templates/lesson.php:211
+msgid "No time limit"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:293
+#: includes/class-zeko-learn-ajax.php:340
+msgid "Not enrolled."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:724
+msgid "Note deleted."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:707
+msgid "Note saved."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1489
+msgid "Note:"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1401
+#: includes/privacy/class-zeko-learn-privacy.php:338
+msgid "Notes"
+msgstr ""
+
+#: templates/lesson.php:286
+msgid "Notes (optional)"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1169 templates/student-dashboard.php:388
+msgid "Notification Preferences"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:940
+#: includes/public/class-zeko-learn-public.php:945
+msgid "Notifications"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:1290
+msgid "Notifications marked as read."
+msgstr ""
+
+#: templates/instructor-dashboard.php:574
+msgid "Numbered List"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:682
+msgid "Object type"
+msgstr ""
+
+#: templates/instructor-dashboard.php:729
+msgid "Optional"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1152
+msgid "Options (one per line, first = correct):"
+msgstr ""
+
+#: templates/instructor-dashboard.php:800
+msgid "Ordered List"
+msgstr ""
+
+#: templates/certificate.php:119
+msgid "Organization"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:441
+#: templates/instructor-dashboard.php:262 templates/single-course.php:175
+msgid "Overview"
+msgstr ""
+
+#: includes/class-zeko-learn-emails.php:203
+msgid "PASSED"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:514
+msgid "PDF URL"
+msgstr ""
+
+#: templates/catalog.php:130
+msgid "Paid"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:812
+msgid "Paid at"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:284
+msgid "Passed"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1064
+msgid "Passing Score"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1108
+msgid "Passing Score (%)"
+msgstr ""
+
+#: templates/lesson.php:212
+msgid "Passing Score:"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:797
+#: includes/public/class-zeko-learn-public.php:951
+#: includes/public/class-zeko-learn-public.php:1034
+msgid "Pay"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1232
+msgid "PayPal"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:265
+msgid "Payment failed. Please check your wallet balance."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:272
+msgid "Payment successful! You are now enrolled."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:253
+msgid "Payment system unavailable."
+msgstr ""
+
+#: includes/class-zeko-learn-ecosystem.php:201
+msgid "Payments are unavailable right now."
+msgstr ""
+
+#: templates/instructor-dashboard.php:1238
+msgid "Payout Details"
+msgstr ""
+
+#: templates/instructor-dashboard.php:989
+msgid "Payout History"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1223
+msgid "Payout Information"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1229
+msgid "Payout Method"
+msgstr ""
+
+#: templates/instructor-dashboard.php:297
+msgid "Pending Assignment Reviews"
+msgstr ""
+
+#: templates/instructor-dashboard.php:628
+msgid "Pending Review"
+msgstr ""
+
+#: templates/instructor-dashboard.php:252
+msgid "Pending Reviews"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:804
+#: templates/instructor-dashboard.php:1005
+msgid "Period"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:138
+#: includes/admin/class-zeko-learn-admin.php:205
+#: includes/admin/class-zeko-learn-admin.php:324
+#: includes/admin/class-zeko-learn-admin.php:541
+#: includes/admin/class-zeko-learn-admin.php:625
+#: includes/admin/class-zeko-learn-admin.php:744
+#: includes/admin/class-zeko-learn-admin.php:798
+#: includes/admin/class-zeko-learn-admin.php:837
+#: includes/admin/class-zeko-learn-admin.php:972
+#: includes/admin/class-zeko-learn-admin.php:1003
+#: includes/admin/class-zeko-learn-admin.php:1188
+#: includes/admin/class-zeko-learn-admin.php:1431
+#: includes/admin/class-zeko-learn-admin.php:1476
+#: includes/class-zeko-learn-ajax.php:502
+#: includes/class-zeko-learn-ajax.php:562
+#: includes/class-zeko-learn-ajax.php:673
+#: includes/class-zeko-learn-ajax.php:1307
+#: includes/class-zeko-learn-ajax.php:1329
+#: includes/class-zeko-learn-ajax.php:1362
+#: includes/class-zeko-learn-ajax.php:1390
+#: includes/class-zeko-learn-ajax.php:1412
+#: includes/class-zeko-learn-ajax.php:1477
+#: includes/class-zeko-learn-ajax.php:1531
+#: includes/class-zeko-learn-ajax.php:1544
+#: includes/class-zeko-learn-ajax.php:1585
+#: includes/class-zeko-learn-ajax.php:1604
+#: includes/class-zeko-learn-ajax.php:1673
+#: includes/class-zeko-learn-ajax.php:1688
+#: includes/class-zeko-learn-ajax.php:1753
+#: includes/class-zeko-learn-ajax.php:1785
+#: includes/class-zeko-learn-ajax.php:1800
+#: includes/class-zeko-learn-ajax.php:1829
+#: includes/class-zeko-learn-ajax.php:1849
+#: includes/class-zeko-learn-ajax.php:1885
+#: includes/class-zeko-learn-ajax.php:2049
+#: includes/class-zeko-learn-ajax.php:2078
+msgid "Permission denied."
+msgstr ""
+
+#: templates/instructor-dashboard.php:1073
+msgid "Pin"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1234
+msgid "Platform Wallet"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:581
+msgid "Please fill in all fields."
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:174
+msgid "Please log in to enroll."
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:809
+msgid "Please log in to view your certificates."
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:776
+msgid "Please log in to view your courses."
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:736
+msgid "Please log in to view your learning dashboard."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:1639
+msgid "Please provide a goal."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:557
+msgid "Please provide a reply."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1147
+msgid "Points"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1344
+msgid "Post Announcement"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1154
+msgid "Pre-selected level when creating new courses."
+msgstr ""
+
+#: templates/student-dashboard.php:363
+msgid "Preferred Difficulty"
+msgstr ""
+
+#: templates/instructor-dashboard.php:832
+msgid "Prerequisites students need before enrolling."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:429
+#: includes/admin/class-zeko-learn-admin.php:460
+#: includes/public/class-zeko-learn-public.php:478
+#: templates/single-course.php:263
+msgid "Preview"
+msgstr ""
+
+#: templates/lesson.php:223
+msgid "Previous"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:266
+#: includes/admin/class-zeko-learn-admin.php:474 templates/catalog.php:126
+#: templates/instructor-dashboard.php:719
+msgid "Price"
+msgstr ""
+
+#: templates/catalog.php:140
+msgid "Price: High to Low"
+msgstr ""
+
+#: templates/catalog.php:139
+msgid "Price: Low to High"
+msgstr ""
+
+#: templates/instructor-dashboard.php:539
+msgid "Pricing"
+msgstr ""
+
+#: templates/certificate.php:126
+msgid "Print Certificate"
+msgstr ""
+
+#: templates/student-dashboard.php:316
+msgid "Profile"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1097
+msgid "Profile & Identity"
+msgstr ""
+
+#: templates/instructor-dashboard.php:381
+msgid "Progress"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:492
+#: templates/instructor-dashboard.php:770
+msgid "Promo Video URL"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1327
+msgid "Provide constructive feedback..."
+msgstr ""
+
+#: templates/instructor-dashboard.php:489
+#: templates/instructor-dashboard.php:1368
+msgid "Publish"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:159
+#: templates/instructor-dashboard.php:629
+msgid "Published"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:793
+#: includes/public/class-zeko-learn-public.php:950
+#: includes/public/class-zeko-learn-public.php:1033
+msgid "Q&A"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1135
+msgid "Question text..."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1124
+msgid "Questions"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:456
+#: templates/instructor-dashboard.php:674
+msgid "Quiz"
+msgstr ""
+
+#. translators: 1: quiz title. 2: quiz status
+#: includes/class-zeko-learn-emails.php:205
+#, php-format
+msgid "Quiz Graded: %1$s — %2$s"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:276
+msgid "Quiz ID"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1105
+msgid "Quiz Title"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1036
+msgid "Quiz deleted."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:349
+msgid "Quiz not found."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:390
+msgid "Quiz not passed. Try again."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:390
+msgid "Quiz passed!"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1039
+msgid "Quiz saved."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:83
+#: includes/admin/class-zeko-learn-admin.php:1062
+msgid "Quizzes"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1110
+msgid "Randomize question order"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:172
+#: includes/admin/class-zeko-learn-admin.php:265
+#: includes/privacy/class-zeko-learn-privacy.php:388
+msgid "Rating"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:686
+msgid "Read"
+msgstr ""
+
+#: templates/student-dashboard.php:430
+msgid "Receive a weekly learning progress summary."
+msgstr ""
+
+#: templates/instructor-dashboard.php:1211
+msgid "Receive a weekly summary of your course activity."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:165
+msgid "Recent Courses"
+msgstr ""
+
+#: templates/instructor-dashboard.php:362
+msgid "Recent Enrollments"
+msgstr ""
+
+#: templates/instructor-dashboard.php:766
+msgid "Recommended: 1280×720px. Max 2MB."
+msgstr ""
+
+#: templates/student-dashboard.php:579
+msgid "Refund & Unenroll"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:218
+msgid "Refund failed."
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:176
+msgid "Refund this course and remove your access?"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:413
+#: includes/admin/class-zeko-learn-admin.php:430
+#: includes/admin/class-zeko-learn-admin.php:1148
+#: templates/instructor-dashboard.php:764
+msgid "Remove"
+msgstr ""
+
+#: templates/instructor-dashboard.php:856
+msgid "Remove skill"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:763
+msgid "Removed from wishlist."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1499
+msgid ""
+"Removes all demo courses, categories, skills, enrollments, reviews, "
+"discussions, and other generated data."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:567
+#: includes/class-zeko-learn-ajax.php:638
+#: includes/public/class-zeko-learn-public.php:180
+#: includes/public/class-zeko-learn-public.php:181
+#: includes/public/class-zeko-learn-public.php:190
+msgid "Reply posted."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:502
+#: includes/public/class-zeko-learn-public.php:455
+#: templates/instructor-dashboard.php:822 templates/single-course.php:201
+msgid "Requirements"
+msgstr ""
+
+#: templates/certificate.php:74
+msgid "Return Home"
+msgstr ""
+
+#: templates/instructor-dashboard.php:274
+msgid "Revenue"
+msgstr ""
+
+#: templates/instructor-dashboard.php:964
+msgid "Revenue Share"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1242
+msgid "Revenue share percentage is set by the platform administrator."
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:392
+msgid "Review"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:546
+#: includes/public/class-zeko-learn-public.php:179
+msgid "Review submitted!"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:443
+#: templates/single-course.php:177
+msgid "Reviews"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:813
+#: includes/public/class-zeko-learn-public.php:955
+#: includes/public/class-zeko-learn-public.php:1038
+msgid "Rewards"
+msgstr ""
+
+#: templates/instructor-dashboard.php:545
+msgid "SEO & Details"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:500
+#: templates/instructor-dashboard.php:787
+msgid "SEO Description"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:499
+#: templates/instructor-dashboard.php:782
+msgid "SEO Title"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:475
+#: templates/instructor-dashboard.php:726
+msgid "Sale Price"
+msgstr ""
+
+#: templates/instructor-dashboard.php:658
+#: templates/instructor-dashboard.php:683
+msgid "Save"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1293 templates/student-dashboard.php:481
+msgid "Save All Settings"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1364
+msgid "Save Assignment"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:520
+msgid "Save Course"
+msgstr ""
+
+#: templates/lesson.php:348
+msgid "Save Note"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1173
+msgid "Save Quiz"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:113
+msgid "Saved"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:280
+msgid "Score"
+msgstr ""
+
+#: includes/class-zeko-learn-emails.php:210
+msgid "Score:"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:255 templates/catalog.php:113
+msgid "Search"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:254 templates/catalog.php:114
+msgid "Search courses..."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:505
+msgid "Search skills..."
+msgstr ""
+
+#: templates/instructor-dashboard.php:860
+msgid "Search skills... (min 2 chars)"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:411
+#: includes/admin/class-zeko-learn-admin.php:445
+msgid "Section Description (optional)"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:410
+#: includes/admin/class-zeko-learn-admin.php:444
+msgid "Section Title"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:111
+msgid "Section added"
+msgstr ""
+
+#: templates/instructor-dashboard.php:656
+msgid "Section description (optional)"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:1818
+msgid "Section saved."
+msgstr ""
+
+#: templates/instructor-dashboard.php:655
+msgid "Section title"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:1375
+msgid "Sections reordered."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:834
+#: includes/admin/class-zeko-learn-admin.php:969
+#: includes/admin/class-zeko-learn-admin.php:1010
+#: includes/admin/class-zeko-learn-admin.php:1185
+#: includes/admin/class-zeko-learn-admin.php:1428
+#: includes/class-zeko-learn-ajax.php:125
+msgid "Security check failed."
+msgstr ""
+
+#: templates/student-dashboard.php:378
+msgid "Set a daily target to stay on track. Leave empty for no reminder."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:86
+#: includes/admin/class-zeko-learn-admin.php:802
+#: templates/instructor-dashboard.php:280 templates/student-dashboard.php:118
+#: templates/student-dashboard.php:197
+msgid "Settings"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:805
+#: includes/class-zeko-learn-ajax.php:1954
+#: includes/class-zeko-learn-ajax.php:2024
+msgid "Settings saved."
+msgstr ""
+
+#: templates/certificate.php:132
+msgid "Share on LinkedIn"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:521
+msgid "Share your experience..."
+msgstr ""
+
+#: templates/single-course.php:339
+msgid "Share your learning experience..."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:805
+#: includes/public/class-zeko-learn-public.php:953
+#: includes/public/class-zeko-learn-public.php:1036
+msgid "Shop"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1111
+msgid "Show Answers"
+msgstr ""
+
+#. translators: %s: search keyword
+#. translators: %s: search keyword
+#: templates/catalog.php:102
+#, php-format
+msgid "Showing results for \"%s\""
+msgstr ""
+
+#: templates/instructor-dashboard.php:1124
+msgid "Shown on your public profile and course pages."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1110
+msgid "Shuffle Questions"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:504
+#: includes/public/class-zeko-learn-public.php:458
+msgid "Skills"
+msgstr ""
+
+#: templates/instructor-dashboard.php:850
+msgid "Skills / Tags"
+msgstr ""
+
+#: templates/single-course.php:215
+msgid "Skills You Will Gain"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:564
+#: includes/admin/class-zeko-learn-admin.php:605
+msgid "Slug"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1251
+msgid "Social Profiles"
+msgstr ""
+
+#: templates/catalog.php:134
+msgid "Sort"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:608
+msgid "Sort Order"
+msgstr ""
+
+#: templates/student-dashboard.php:572
+msgid "Start"
+msgstr ""
+
+#: includes/class-zeko-learn-emails.php:137
+msgid "Start Learning"
+msgstr ""
+
+#: templates/lesson.php:215
+msgid "Start Quiz"
+msgstr ""
+
+#: templates/instructor-dashboard.php:444
+msgid "Start creating courses to share your knowledge with the world."
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:204
+#: includes/privacy/class-zeko-learn-privacy.php:292
+msgid "Started at"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:170
+#: includes/admin/class-zeko-learn-admin.php:263
+#: includes/admin/class-zeko-learn-admin.php:388
+#: includes/admin/class-zeko-learn-admin.php:691
+#: includes/admin/class-zeko-learn-admin.php:1401
+#: includes/privacy/class-zeko-learn-privacy.php:154
+#: includes/privacy/class-zeko-learn-privacy.php:200
+#: includes/privacy/class-zeko-learn-privacy.php:342
+#: includes/privacy/class-zeko-learn-privacy.php:644
+#: includes/privacy/class-zeko-learn-privacy.php:808
+#: includes/privacy/class-zeko-learn-privacy.php:850
+#: templates/instructor-dashboard.php:382
+#: templates/instructor-dashboard.php:625
+#: templates/instructor-dashboard.php:1006
+msgid "Status"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:688
+#: includes/admin/class-zeko-learn-admin.php:769
+#: includes/admin/class-zeko-learn-admin.php:1401
+#: templates/instructor-dashboard.php:314
+#: templates/instructor-dashboard.php:379
+#: templates/instructor-dashboard.php:1314
+msgid "Student"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1194
+msgid "Student Question"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:1224
+#: templates/instructor-dashboard.php:271 templates/single-course.php:360
+msgid "Students"
+msgstr ""
+
+#: templates/instructor-dashboard.php:901
+msgid "Students will appear here once they enroll in your courses."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1297
+#: includes/admin/class-zeko-learn-admin.php:1311
+#: includes/admin/class-zeko-learn-admin.php:1397
+msgid "Submissions"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:195
+msgid "Submit"
+msgstr ""
+
+#: templates/lesson.php:289
+msgid "Submit Assignment"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1333
+msgid "Submit Grade"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:173 templates/lesson.php:225
+msgid "Submit Quiz"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:524
+#: templates/single-course.php:342
+msgid "Submit Review"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1401
+#: templates/instructor-dashboard.php:317 templates/lesson.php:258
+msgid "Submitted"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:354
+msgid "Submitted at"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:363
+#: templates/instructor-dashboard.php:561
+msgid "Subtitle"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:199
+msgid "Successfully enrolled!"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:1050
+#: templates/student-dashboard.php:453
+msgid "System"
+msgstr ""
+
+#: templates/lesson.php:347
+msgid "Take a note at current timestamp..."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:503
+#: templates/instructor-dashboard.php:835
+msgid "Target Audience"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:640
+msgid "Target date"
+msgstr ""
+
+#: includes/class-zeko-learn-ecosystem.php:298
+msgid "Teach on Zeko"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1142
+msgid "Teaching Preferences"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1157
+msgid "Teaching Style"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1123
+msgid "Tell students about yourself, your experience, and what you teach..."
+msgstr ""
+
+#: templates/student-dashboard.php:337
+msgid "Tell us about yourself..."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:454
+#: templates/instructor-dashboard.php:671
+msgid "Text"
+msgstr ""
+
+#: templates/certificate.php:73
+msgid "The certificate number you entered could not be found."
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:669
+msgid "The certificate number you entered is invalid."
+msgstr ""
+
+#: templates/student-dashboard.php:447
+msgid "Theme"
+msgstr ""
+
+#. translators: %s: course title
+#: includes/class-zeko-learn-emails.php:326
+#, php-format
+msgid "There is a new announcement in <strong>%s</strong>:"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1500
+msgid "This cannot be undone. Real user data will not be affected."
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:614 templates/lesson.php:161
+msgid "This content is locked"
+msgstr ""
+
+#: templates/course-player.php:124
+msgid "This course does not have any lessons yet."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:244
+msgid "This course is free."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:164
+msgid "This course requires payment."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:473
+msgid "This is a free course"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:673 templates/certificate.php:90
+msgid "This is to certify that"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1114 templates/student-dashboard.php:333
+msgid "This will update your WordPress display name."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:482
+msgid "Thumbnail"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1064
+msgid "Time Limit"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1107
+msgid "Time Limit (minutes)"
+msgstr ""
+
+#: templates/lesson.php:211
+msgid "Time Limit:"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:168
+#: includes/admin/class-zeko-learn-admin.php:261
+#: includes/admin/class-zeko-learn-admin.php:1064
+#: includes/admin/class-zeko-learn-admin.php:1297
+#: includes/admin/class-zeko-learn-admin.php:1345
+#: includes/privacy/class-zeko-learn-privacy.php:434
+#: includes/privacy/class-zeko-learn-privacy.php:846
+#: templates/instructor-dashboard.php:1357
+msgid "Title"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:1714
+msgid "Title is required."
+msgstr ""
+
+#: templates/instructor-dashboard.php:715
+msgid "Toggle if this course is free to enroll."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:344
+msgid "Too many attempts. Please wait a minute."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:587
+msgid "Too many posts. Please wait a minute."
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:186
+msgid "Too many requests. Please wait."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:158
+#: templates/instructor-dashboard.php:215
+msgid "Total Courses"
+msgstr ""
+
+#: templates/instructor-dashboard.php:949
+msgid "Total Earned"
+msgstr ""
+
+#: templates/instructor-dashboard.php:242
+msgid "Total Revenue"
+msgstr ""
+
+#: templates/instructor-dashboard.php:224
+msgid "Total Students"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:766
+msgid "Total days active"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1270
+msgid "Twitter / X"
+msgstr ""
+
+#: templates/instructor-dashboard.php:673
+msgid "URL"
+msgstr ""
+
+#: templates/instructor-dashboard.php:572
+msgid "Underline"
+msgstr ""
+
+#: templates/student-dashboard.php:579
+msgid "Unenroll"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1466
+msgid "Unknown"
+msgstr ""
+
+#: templates/lesson.php:213
+msgid "Unlimited"
+msgstr ""
+
+#: templates/instructor-dashboard.php:799
+#: templates/instructor-dashboard.php:827
+#: templates/instructor-dashboard.php:840
+msgid "Unordered List"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1073
+msgid "Unpin"
+msgstr ""
+
+#: templates/instructor-dashboard.php:489
+msgid "Unpublish"
+msgstr ""
+
+#: templates/instructor-dashboard.php:659
+#: templates/instructor-dashboard.php:684
+msgid "Up"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:610
+msgid "Update Category"
+msgstr ""
+
+#: templates/instructor-dashboard.php:872
+msgid "Update Course"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:564
+msgid "Updated at"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:490
+msgid "Upload Thumbnail"
+msgstr ""
+
+#: templates/lesson.php:277
+msgid "Upload your submission"
+msgstr ""
+
+#: includes/class-zeko-learn-embeds.php:100
+msgid "Use YouTube’s privacy-enhanced (nocookie) domain"
+msgstr ""
+
+#: templates/instructor-dashboard.php:23
+msgid "User not found."
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:819
+#: includes/public/class-zeko-learn-public.php:870
+msgid "Verify"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:866
+msgid "Verify a Certificate"
+msgstr ""
+
+#: templates/certificate.php:101
+msgid "Verify at:"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:455
+#: templates/instructor-dashboard.php:672
+msgid "Video"
+msgstr ""
+
+#: includes/class-zeko-learn-embeds.php:98
+msgid "Video Embeds"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:825
+#: templates/student-dashboard.php:238
+msgid "View"
+msgstr ""
+
+#: includes/class-zeko-learn-emails.php:175
+msgid "View Certificate"
+msgstr ""
+
+#: includes/class-zeko-learn-emails.php:331
+msgid "View Course"
+msgstr ""
+
+#: includes/class-zeko-learn-emails.php:292
+msgid "View Discussion"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:854
+msgid "View Full Certificate"
+msgstr ""
+
+#: includes/class-zeko-learn-emails.php:111
+msgid "Visit site"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:476
+msgid "Vote"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:657
+msgid "Vote recorded."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:1500
+msgid "Warning:"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1258
+msgid "Website"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1210
+msgid "Weekly Digest"
+msgstr ""
+
+#: templates/student-dashboard.php:429
+msgid "Weekly Summary"
+msgstr ""
+
+#. translators: %s: user display name
+#: templates/student-dashboard.php:81
+#, php-format
+msgid "Welcome back, %s!"
+msgstr ""
+
+#: includes/class-zeko-learn-emails.php:130
+msgid "Welcome to"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:501
+#: includes/public/class-zeko-learn-public.php:449
+#: templates/instructor-dashboard.php:794 templates/single-course.php:187
+msgid "What You'll Learn"
+msgstr ""
+
+#: templates/single-course.php:208
+msgid "Who This Course Is For"
+msgstr ""
+
+#: templates/instructor-dashboard.php:845
+msgid "Who is this course for?"
+msgstr ""
+
+#: templates/student-dashboard.php:194
+msgid "Wishlist"
+msgstr ""
+
+#: templates/student-dashboard.php:263
+msgid "Wishlist is empty"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:514
+#: templates/single-course.php:332
+msgid "Write a Review"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1362
+msgid "Write your announcement..."
+msgstr ""
+
+#: includes/class-zeko-learn-ecosystem.php:191
+msgid "You are not actively enrolled in this course."
+msgstr ""
+
+#: includes/class-zeko-learn-ecosystem.php:323
+#: includes/public/class-zeko-learn-public.php:782
+msgid "You are not enrolled in any courses yet."
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:415
+msgid "You are not enrolled in this course."
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:756
+#: templates/instructor-dashboard.php:17
+msgid "You do not have instructor access."
+msgstr ""
+
+#. translators: %s: course title
+#: includes/class-zeko-learn-ajax.php:1037
+#, php-format
+msgid "You enrolled in %s"
+msgstr ""
+
+#. translators: %s: course title
+#: includes/class-zeko-learn-emails.php:134
+#, php-format
+msgid "You have been enrolled in <strong>%s</strong>. Start learning now!"
+msgstr ""
+
+#. translators: %s: course title
+#: includes/class-zeko-learn-emails.php:170
+#, php-format
+msgid "You have successfully completed <strong>%s</strong>!"
+msgstr ""
+
+#: includes/class-zeko-learn-ajax.php:534
+msgid "You must be enrolled to review."
+msgstr ""
+
+#. translators: %s: course title
+#: includes/class-zeko-learn-ajax.php:1040
+#, php-format
+msgid "You purchased %s"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1276
+msgid "YouTube"
+msgstr ""
+
+#: templates/instructor-dashboard.php:772
+msgid "YouTube or Vimeo URL for the course promo video."
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:1065
+msgid ""
+"Your Zeko Learn enrollment, progress, assignment, certificate, note and "
+"bookmark records were removed. Public course reviews and discussion threads "
+"you posted were kept but detached from your account."
+msgstr ""
+
+#: templates/instructor-dashboard.php:1113 templates/student-dashboard.php:332
+msgid "Your public name"
+msgstr ""
+
+#. translators: 1: quiz title. 2: course title
+#: includes/class-zeko-learn-emails.php:209
+#, php-format
+msgid ""
+"Your quiz <strong>%1$s</strong> in <strong>%2$s</strong> has been graded."
+msgstr ""
+
+#. translators: 1: assignment title. 2: course title
+#: includes/class-zeko-learn-emails.php:246
+#, php-format
+msgid ""
+"Your submission for <strong>%1$s</strong> in <strong>%2$s</strong> has been "
+"graded."
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:69
+#: includes/admin/class-zeko-learn-admin.php:70
+msgid "Zeko Learn"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:155
+msgid "Zeko Learn Dashboard"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:59
+#: includes/privacy/class-zeko-learn-privacy.php:72
+msgid "Zeko Learn data"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:322
+msgid "Zeko Learn — Assignment submissions"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:590
+msgid "Zeko Learn — Bookmarks"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:502
+msgid "Zeko Learn — Certificates"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:234
+msgid "Zeko Learn — Course progress"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:838
+msgid "Zeko Learn — Courses you created"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:468
+msgid "Zeko Learn — Discussion votes"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:422
+msgid "Zeko Learn — Discussions"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:146
+msgid "Zeko Learn — Enrollments"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:792
+msgid "Zeko Learn — Instructor payouts"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:628
+msgid "Zeko Learn — Learning goals"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:750
+msgid "Zeko Learn — Learning streaks"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:188
+msgid "Zeko Learn — Lesson progress"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:544
+msgid "Zeko Learn — Notes"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:670
+msgid "Zeko Learn — Notifications"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:272
+msgid "Zeko Learn — Quiz attempts"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:380
+msgid "Zeko Learn — Reviews"
+msgstr ""
+
+#: includes/privacy/class-zeko-learn-privacy.php:716
+msgid "Zeko Learn — Wishlist"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:794
+#: templates/course-player.php:79 templates/lesson.php:118
+#: templates/student-dashboard.php:566
+msgid "complete"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:852
+msgid "completed"
+msgstr ""
+
+#: templates/instructor-dashboard.php:163
+msgid "courses"
+msgstr ""
+
+#: includes/admin/class-zeko-learn-admin.php:607
+msgid "dashicons-book"
+msgstr ""
+
+#: templates/student-dashboard.php:110
+msgid "day streak"
+msgstr ""
+
+#: templates/student-dashboard.php:375
+msgid "e.g. 30"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1323
+msgid "e.g. A, B+, 85/100"
+msgstr ""
+
+#: templates/instructor-dashboard.php:558
+msgid "e.g. Complete Web Development Bootcamp"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1158
+msgid "e.g. Hands-on, Project-based, Theoretical"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1239
+msgid "e.g. PayPal email or bank account info"
+msgstr ""
+
+#: templates/instructor-dashboard.php:1118
+msgid "e.g. Web Development, Data Science"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:675 templates/certificate.php:94
+msgid "has successfully completed the course"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:412
+#: templates/single-course.php:113
+msgid "hours"
+msgstr ""
+
+#: templates/single-course.php:160
+msgid "hours of content"
+msgstr ""
+
+#: templates/catalog.php:199
+msgid "hrs"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:473
+#: templates/instructor-dashboard.php:930 templates/single-course.php:162
+#: templates/single-course.php:247
+msgid "lessons"
+msgstr ""
+
+#: templates/single-course.php:165
+msgid "level"
+msgstr ""
+
+#: templates/course-player.php:147 templates/lesson.php:177
+#: templates/single-course.php:249
+msgid "min"
+msgstr ""
+
+#: templates/student-dashboard.php:104
+msgid "min/day goal"
+msgstr ""
+
+#: templates/student-dashboard.php:376
+msgid "minutes"
+msgstr ""
+
+#: includes/class-zeko-learn-emails.php:203
+msgid "not passed"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:409
+#: includes/public/class-zeko-learn-public.php:500
+#: templates/single-course.php:107 templates/single-course.php:283
+msgid "reviews"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:410
+#: includes/public/class-zeko-learn-public.php:1270 templates/catalog.php:198
+#: templates/instructor-dashboard.php:167 templates/single-course.php:109
+msgid "students"
+msgstr ""
+
+#: includes/public/class-zeko-learn-public.php:489
+msgid "total lessons"
+msgstr ""
+
+#: templates/certificate.php:20
+msgid "— Certificate"
+msgstr ""
+
+#: templates/instructor-dashboard.php:598
+#: templates/instructor-dashboard.php:1231 templates/student-dashboard.php:356
+#: templates/student-dashboard.php:365
+msgid "— Select —"
+msgstr ""
+

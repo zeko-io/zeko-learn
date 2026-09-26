@@ -1,0 +1,3788 @@
+/* Zeko Learn — Public Styles */
+
+/* ─── Variables ─────────────────────────────────────────────── */
+:root {
+	--zl-primary: #4f46e5;
+	--zl-primary-hover: #4338ca;
+	--zl-success: #16a34a;
+	--zl-warning: #d97706;
+	--zl-danger: #dc2626;
+	--zl-gray-50: #f9fafb;
+	--zl-gray-100: #f3f4f6;
+	--zl-gray-200: #e5e7eb;
+	--zl-gray-300: #d1d5db;
+	--zl-gray-500: #6b7280;
+	--zl-gray-700: #374151;
+	--zl-gray-900: #111827;
+	--zl-radius: 8px;
+	--zl-shadow: 0 1px 3px rgba(0,0,0,0.1);
+	--zl-shadow-lg: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* ─── Course Card Grid ──────────────────────────────────────── */
+.zeko-learn-featured-grid,
+.zeko-my-courses-grid,
+.zeko-instructor-courses {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 24px;
+	margin: 24px 0;
+}
+
+.zeko-course-card {
+	background: #fff;
+	border-radius: var(--zl-radius);
+	overflow: hidden;
+	box-shadow: var(--zl-shadow);
+	transition: box-shadow 0.2s, transform 0.2s;
+}
+.zeko-course-card:hover {
+	box-shadow: var(--zl-shadow-lg);
+	transform: translateY(-2px);
+}
+.zeko-card-thumb {
+	display: block;
+	position: relative;
+	aspect-ratio: 16/9;
+	overflow: hidden;
+	background: var(--zl-gray-100);
+}
+.zeko-card-thumb img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.zeko-card-placeholder {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(135deg, var(--zl-gray-200), var(--zl-gray-100));
+}
+.zeko-card-badge {
+	position: absolute;
+	top: 12px;
+	left: 12px;
+	padding: 4px 10px;
+	border-radius: 4px;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.zeko-free {
+	background: var(--zl-success);
+	color: #fff;
+}
+.zeko-card-body {
+	padding: 16px;
+}
+.zeko-card-body h3 {
+	margin: 0 0 4px;
+	font-size: 16px;
+	line-height: 1.4;
+}
+.zeko-card-body h3 a {
+	text-decoration: none;
+	color: var(--zl-gray-900);
+}
+.zeko-card-subtitle {
+	margin: 0 0 8px;
+	font-size: 13px;
+	color: var(--zl-gray-500);
+}
+.zeko-card-meta {
+	display: flex;
+	gap: 12px;
+	font-size: 13px;
+	color: var(--zl-gray-500);
+}
+.zeko-card-rating {
+	color: #f59e0b;
+}
+.zeko-card-price {
+	margin-top: 8px;
+	font-size: 18px;
+	font-weight: 700;
+	color: var(--zl-primary);
+}
+
+/* ─── Course Hero ───────────────────────────────────────────── */
+.zeko-course-hero {
+	display: flex;
+	gap: 32px;
+	padding: 40px 0;
+	background: var(--zl-gray-50);
+	border-bottom: 1px solid var(--zl-gray-200);
+}
+.zeko-course-hero .zeko-course-thumb {
+	max-width: 400px;
+	border-radius: var(--zl-radius);
+	object-fit: cover;
+}
+.zeko-course-hero-content {
+	flex: 1;
+}
+.zeko-course-hero-content h1 {
+	margin: 0 0 8px;
+	font-size: 28px;
+}
+.zeko-course-subtitle {
+	margin: 0 0 12px;
+	font-size: 16px;
+	color: var(--zl-gray-500);
+}
+.zeko-course-meta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	margin: 12px 0;
+	font-size: 14px;
+	color: var(--zl-gray-500);
+}
+.zeko-course-price {
+	margin: 16px 0;
+}
+.zeko-price {
+	font-size: 28px;
+	font-weight: 700;
+	color: var(--zl-gray-900);
+}
+.zeko-sale-price {
+	font-size: 18px;
+	color: var(--zl-gray-500);
+	text-decoration: line-through;
+	margin-left: 8px;
+}
+.zeko-price-free {
+	font-size: 24px;
+	font-weight: 700;
+	color: var(--zl-success);
+}
+
+/* ─── Course Tabs ───────────────────────────────────────────── */
+.zeko-tab-nav {
+	display: flex;
+	border-bottom: 2px solid var(--zl-gray-200);
+	margin-bottom: 24px;
+}
+.zeko-tab-btn {
+	padding: 12px 24px;
+	border: none;
+	background: none;
+	font-size: 15px;
+	font-weight: 500;
+	color: var(--zl-gray-500);
+	cursor: pointer;
+	border-bottom: 2px solid transparent;
+	margin-bottom: -2px;
+	transition: color 0.2s, border-color 0.2s;
+}
+.zeko-tab-btn:hover {
+	color: var(--zl-gray-700);
+}
+.zeko-tab-btn.active {
+	color: var(--zl-primary);
+	border-bottom-color: var(--zl-primary);
+}
+.zeko-tab-panel {
+	display: none;
+	padding: 16px 0;
+}
+.zeko-tab-panel.active {
+	display: block;
+}
+
+/* ─── Curriculum ────────────────────────────────────────────── */
+.zeko-section {
+	margin-bottom: 16px;
+	border: 1px solid var(--zl-gray-200);
+	border-radius: var(--zl-radius);
+	overflow: hidden;
+}
+.zeko-section-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px 16px;
+	background: var(--zl-gray-50);
+	cursor: pointer;
+}
+.zeko-section-header h4 {
+	margin: 0;
+	font-size: 15px;
+}
+.zeko-section-count {
+	font-size: 13px;
+	color: var(--zl-gray-500);
+}
+.zeko-lesson-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.zeko-lesson-item {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px 16px;
+	border-top: 1px solid var(--zl-gray-100);
+	font-size: 14px;
+}
+.zeko-lesson-title {
+	flex: 1;
+}
+.zeko-lesson-duration {
+	font-size: 12px;
+	color: var(--zl-gray-500);
+}
+.zeko-preview-badge {
+	display: inline-block;
+	padding: 2px 6px;
+	background: var(--zl-primary);
+	color: #fff;
+	border-radius: 3px;
+	font-size: 11px;
+	margin-left: 6px;
+}
+
+/* ─── Course Player ─────────────────────────────────────────── */
+.zeko-learn-player {
+	display: flex;
+	min-height: 80vh;
+}
+.zeko-player-sidebar {
+	width: 320px;
+	background: var(--zl-gray-900);
+	color: #fff;
+	overflow-y: auto;
+	flex-shrink: 0;
+}
+.zeko-player-sidebar h3 {
+	padding: 16px;
+	margin: 0;
+	font-size: 16px;
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.zeko-nav-section-title {
+	padding: 10px 16px;
+	font-size: 13px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: rgba(255,255,255,0.6);
+}
+.zeko-nav-section ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.zeko-nav-lesson a {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 8px 16px 8px 32px;
+	color: rgba(255,255,255,0.8);
+	text-decoration: none;
+	font-size: 13px;
+	transition: background 0.2s;
+}
+.zeko-nav-lesson a:hover {
+	background: rgba(255,255,255,0.05);
+}
+.zeko-nav-lesson.completed a {
+	color: var(--zl-success);
+}
+.zeko-player-content {
+	flex: 1;
+	padding: 32px;
+}
+.zeko-player-content h2 {
+	margin-top: 0;
+}
+.zeko-video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	margin-bottom: 24px;
+}
+.zeko-video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.zeko-lesson-content {
+	margin-bottom: 24px;
+	line-height: 1.7;
+}
+.zeko-lesson-actions {
+	display: flex;
+	gap: 12px;
+	margin-top: 24px;
+	padding-top: 24px;
+	border-top: 1px solid var(--zl-gray-200);
+}
+
+/* ─── Reviews ───────────────────────────────────────────────── */
+.zeko-reviews-summary {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin-bottom: 24px;
+}
+.zeko-big-rating {
+	font-size: 36px;
+	font-weight: 700;
+}
+.zeko-rating-stars {
+	font-size: 20px;
+	color: #f59e0b;
+}
+.zeko-review {
+	padding: 16px 0;
+	border-bottom: 1px solid var(--zl-gray-100);
+}
+.zeko-review-header {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 8px;
+}
+.zeko-review-rating {
+	color: #f59e0b;
+}
+.zeko-review-date {
+	font-size: 13px;
+	color: var(--zl-gray-500);
+}
+.zeko-review-text {
+	font-size: 14px;
+	line-height: 1.6;
+}
+
+/* ─── Rating Input ──────────────────────────────────────────── */
+.zeko-rating-input {
+	display: flex;
+	gap: 4px;
+	margin-bottom: 12px;
+}
+.zeko-star {
+	font-size: 28px;
+	cursor: pointer;
+	color: var(--zl-gray-300);
+	transition: color 0.15s;
+}
+.zeko-star.active,
+.zeko-star:hover {
+	color: #f59e0b;
+}
+
+/* ─── Progress Bar ──────────────────────────────────────────── */
+.zeko-progress-bar {
+	height: 8px;
+	background: var(--zl-gray-200);
+	border-radius: 4px;
+	overflow: hidden;
+	margin: 8px 0;
+}
+.zeko-progress-fill {
+	height: 100%;
+	background: var(--zl-primary);
+	border-radius: 4px;
+	transition: width 0.3s;
+}
+.zeko-progress-item {
+	margin-bottom: 20px;
+}
+
+/* ─── Category Grid ─────────────────────────────────────────── */
+.zeko-learn-categories-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+	gap: 20px;
+}
+.zeko-category-card {
+	display: block;
+	padding: 24px;
+	background: #fff;
+	border: 1px solid var(--zl-gray-200);
+	border-radius: var(--zl-radius);
+	text-decoration: none;
+	text-align: center;
+	transition: box-shadow 0.2s, transform 0.2s;
+}
+.zeko-category-card:hover {
+	box-shadow: var(--zl-shadow-lg);
+	transform: translateY(-2px);
+}
+.zeko-cat-icon {
+	font-size: 32px;
+	color: var(--zl-primary);
+	margin-bottom: 12px;
+}
+.zeko-category-card h3 {
+	margin: 0 0 8px;
+	font-size: 16px;
+	color: var(--zl-gray-900);
+}
+.zeko-category-card p {
+	margin: 0;
+	font-size: 13px;
+	color: var(--zl-gray-500);
+}
+
+/* ─── Certificate ───────────────────────────────────────────── */
+.zeko-certificate {
+	max-width: 600px;
+	margin: 40px auto;
+	padding: 48px;
+	background: #fff;
+	border: 3px solid var(--zl-primary);
+	border-radius: var(--zl-radius);
+	text-align: center;
+}
+.zeko-certificate h1 {
+	font-size: 24px;
+	color: var(--zl-primary);
+	margin-bottom: 24px;
+}
+.zeko-cert-name {
+	font-size: 28px;
+	color: var(--zl-gray-900);
+	margin: 16px 0;
+}
+.zeko-cert-course {
+	font-size: 20px;
+	margin: 16px 0;
+}
+
+/* ─── Buttons ───────────────────────────────────────────────── */
+.button.zeko-btn {
+	display: inline-block;
+	padding: 12px 28px;
+	font-size: 16px;
+	border-radius: var(--zl-radius);
+	text-decoration: none;
+}
+
+/* ─── Navigation ────────────────────────────────────────────── */
+.zeko-lesson-nav {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 32px;
+	padding-top: 24px;
+	border-top: 1px solid var(--zl-gray-200);
+}
+
+/* ─── Skill Tags ────────────────────────────────────────────── */
+.zeko-skill-tag {
+	display: inline-block;
+	padding: 4px 10px;
+	background: var(--zl-gray-100);
+	border-radius: 4px;
+	font-size: 13px;
+	margin: 2px;
+}
+
+/* ─── Instructor ────────────────────────────────────────────── */
+.zeko-instructor-header {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	margin-bottom: 24px;
+}
+.zeko-instructor-stats {
+	display: flex;
+	gap: 32px;
+	margin-bottom: 24px;
+}
+.zeko-stat {
+	text-align: center;
+}
+.zeko-stat strong {
+	display: block;
+	font-size: 24px;
+}
+
+/* ─── My Course Card ────────────────────────────────────────── */
+.zeko-my-course-card {
+	padding: 16px;
+	background: #fff;
+	border: 1px solid var(--zl-gray-200);
+	border-radius: var(--zl-radius);
+}
+.zeko-my-course-info h3 {
+	margin: 0 0 8px;
+	font-size: 16px;
+}
+.zeko-progress-text {
+	font-size: 13px;
+	color: var(--zl-gray-500);
+}
+
+/* ─── Responsive ────────────────────────────────────────────── */
+@media (max-width: 768px) {
+	.zeko-course-hero {
+		flex-direction: column;
+	}
+	.zeko-learn-player {
+		flex-direction: column;
+	}
+	.zeko-player-sidebar {
+		width: 100%;
+		max-height: 300px;
+	}
+	.zeko-course-hero .zeko-course-thumb {
+		max-width: 100%;
+	}
+	.zeko-tab-nav {
+		overflow-x: auto;
+	}
+	.zeko-course-sidebar-card {
+		position: static;
+		width: 100%;
+		margin-top: 24px;
+	}
+	.zeko-lesson-viewer {
+		flex-direction: column;
+	}
+	.zeko-lesson-viewer .zeko-player-sidebar {
+		width: 100%;
+		max-height: 250px;
+	}
+	.zeko-dashboard-stats {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.zeko-catalog-filters .zeko-filter-row {
+		flex-direction: column;
+	}
+	.zeko-certificate {
+		padding: 24px;
+		margin: 16px;
+	}
+}
+
+/* ─── Catalog Page ──────────────────────────────────────────── */
+.zeko-catalog-header {
+	margin-bottom: 24px;
+}
+.zeko-catalog-header h1 {
+	margin: 0 0 8px;
+	font-size: 28px;
+}
+.zeko-catalog-filters {
+	background: #fff;
+	border: 1px solid var(--zl-gray-200);
+	border-radius: var(--zl-radius);
+	padding: 20px;
+	margin-bottom: 24px;
+}
+.zeko-filter-row {
+	display: flex;
+	gap: 16px;
+	align-items: flex-end;
+	flex-wrap: wrap;
+}
+.zeko-filter-group {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+.zeko-filter-group label {
+	font-size: 13px;
+	font-weight: 600;
+	color: var(--zl-gray-700);
+}
+.zeko-filter-group input,
+.zeko-filter-group select {
+	padding: 8px 12px;
+	border: 1px solid var(--zl-gray-300);
+	border-radius: 4px;
+	font-size: 14px;
+}
+.zeko-category-nav {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+	margin-top: 16px;
+	padding-top: 16px;
+	border-top: 1px solid var(--zl-gray-200);
+}
+.zeko-cat-link {
+	padding: 6px 14px;
+	border-radius: 20px;
+	text-decoration: none;
+	font-size: 13px;
+	color: var(--zl-gray-700);
+	background: var(--zl-gray-100);
+	transition: background 0.2s, color 0.2s;
+}
+.zeko-cat-link:hover,
+.zeko-cat-link.active {
+	background: var(--zl-primary);
+	color: #fff;
+}
+.zeko-cat-count {
+	font-size: 12px;
+	opacity: 0.7;
+}
+.zeko-catalog-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	gap: 24px;
+}
+.zeko-card-category {
+	display: block;
+	font-size: 12px;
+	color: var(--zl-primary);
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-bottom: 4px;
+}
+.zeko-card-instructor {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	font-size: 13px;
+	color: var(--zl-gray-500);
+	margin-bottom: 8px;
+}
+.zeko-card-instructor img {
+	border-radius: 50%;
+}
+.zeko-card-footer {
+	margin-top: 8px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+.zeko-card-sale-price {
+	font-size: 14px;
+	color: var(--zl-gray-500);
+	text-decoration: line-through;
+}
+.zeko-card-hours {
+	font-size: 13px;
+	color: var(--zl-gray-500);
+}
+.zeko-pagination {
+	display: flex;
+	justify-content: center;
+	gap: 4px;
+	margin-top: 32px;
+}
+.zeko-pagination .page-numbers {
+	padding: 8px 14px;
+	border: 1px solid var(--zl-gray-200);
+	border-radius: 4px;
+	text-decoration: none;
+	color: var(--zl-gray-700);
+}
+.zeko-pagination .page-numbers.current {
+	background: var(--zl-primary);
+	color: #fff;
+	border-color: var(--zl-primary);
+}
+.zeko-catalog-empty {
+	text-align: center;
+	padding: 60px 20px;
+	color: var(--zl-gray-500);
+	font-size: 18px;
+}
+
+/* ─── Single Course Hero + Sidebar Card ─────────────────────── */
+.zeko-single-course {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.zeko-course-hero {
+	display: flex;
+	gap: 0;
+	background: var(--zl-gray-900);
+	color: #fff;
+	padding: 0;
+	border: none;
+}
+.zeko-course-hero-inner {
+	flex: 1;
+	padding: 40px 48px;
+}
+.zeko-breadcrumb {
+	display: inline-block;
+	padding: 4px 10px;
+	background: rgba(255,255,255,0.15);
+	border-radius: 4px;
+	font-size: 12px;
+	margin-bottom: 12px;
+}
+.zeko-course-hero-inner h1 {
+	color: #fff;
+	font-size: 32px;
+}
+.zeko-course-hero .zeko-course-subtitle {
+	color: rgba(255,255,255,0.7);
+	font-size: 18px;
+}
+.zeko-hero-meta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	align-items: center;
+	margin: 16px 0;
+	font-size: 14px;
+	color: rgba(255,255,255,0.7);
+}
+.zeko-hero-meta .zeko-rating {
+	color: #f59e0b;
+}
+.zeko-hero-instructor {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-top: 12px;
+	font-size: 14px;
+}
+.zeko-hero-updated {
+	margin-top: 8px;
+	font-size: 13px;
+	color: rgba(255,255,255,0.5);
+}
+.zeko-course-sidebar-card {
+	width: 340px;
+	background: #fff;
+	border-radius: var(--zl-radius);
+	box-shadow: var(--zl-shadow-lg);
+	align-self: flex-start;
+	position: sticky;
+	top: 24px;
+	margin: -80px 24px 0 0;
+	flex-shrink: 0;
+	overflow: hidden;
+}
+.zeko-sidebar-thumb {
+	background: var(--zl-gray-100);
+}
+.zeko-sidebar-thumb img {
+	width: 100%;
+	display: block;
+}
+.zeko-sidebar-body {
+	padding: 24px;
+	color: var(--zl-gray-700);
+}
+.zeko-sidebar-price {
+	margin-bottom: 16px;
+	display: flex;
+	align-items: baseline;
+	gap: 8px;
+}
+.zeko-sidebar-price .zeko-price {
+	font-size: 32px;
+}
+.zeko-sidebar-price .zeko-price.free {
+	color: var(--zl-success);
+}
+.zeko-sidebar-price .zeko-sale-price {
+	font-size: 18px;
+}
+.zeko-btn-full {
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 16px;
+}
+.zeko-sidebar-highlights {
+	margin-top: 16px;
+}
+.zeko-highlight {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 8px 0;
+	font-size: 14px;
+	border-bottom: 1px solid var(--zl-gray-100);
+}
+.zeko-highlight .dashicons {
+	color: var(--zl-gray-500);
+}
+.zeko-section-block {
+	margin-bottom: 32px;
+}
+.zeko-section-block h3 {
+	font-size: 20px;
+	margin-bottom: 12px;
+}
+.zeko-what-you-learn-content ul {
+	list-style: none;
+	padding: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 8px;
+}
+.zeko-what-you-learn-content li::before {
+	content: "✓";
+	color: var(--zl-success);
+	font-weight: 700;
+	margin-right: 8px;
+}
+.zeko-description-content {
+	line-height: 1.7;
+	color: var(--zl-gray-700);
+}
+.zeko-skill-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+}
+.zeko-skill-tag {
+	padding: 6px 14px;
+	background: var(--zl-gray-100);
+	border-radius: 20px;
+	font-size: 13px;
+}
+.zeko-instructor-profile {
+	display: flex;
+	gap: 20px;
+	align-items: flex-start;
+}
+.zeko-instructor-info {
+	flex: 1;
+}
+.zeko-instructor-info h3 {
+	margin: 0 0 8px;
+}
+.zeko-instructor-bio {
+	margin-top: 12px;
+	line-height: 1.6;
+	color: var(--zl-gray-700);
+}
+.zeko-curriculum-section {
+	margin-bottom: 8px;
+	border: 1px solid var(--zl-gray-200);
+	border-radius: var(--zl-radius);
+	overflow: hidden;
+}
+.zeko-curriculum-section .zeko-section-header {
+	cursor: pointer;
+}
+.zeko-curriculum-section .zeko-section-info {
+	flex: 1;
+}
+.zeko-curriculum-section .zeko-section-info h4 {
+	margin: 0 0 2px;
+	font-size: 15px;
+}
+.zeko-curriculum-section .zeko-section-info p {
+	margin: 0;
+	font-size: 13px;
+	color: var(--zl-gray-500);
+}
+.zeko-curriculum-section .zeko-section-meta {
+	font-size: 13px;
+	color: var(--zl-gray-500);
+	white-space: nowrap;
+}
+.zeko-preview-link {
+	font-size: 12px;
+	color: var(--zl-primary);
+	text-decoration: none;
+	margin-left: auto;
+}
+
+/* ─── Reviews Tab Enhancements ───────────────────────────────── */
+.zeko-reviews-summary {
+	display: flex;
+	gap: 32px;
+	margin-bottom: 32px;
+}
+.zeko-summary-left {
+	text-align: center;
+	min-width: 120px;
+}
+.zeko-big-stars {
+	display: block;
+	font-size: 20px;
+	color: #f59e0b;
+	margin: 4px 0;
+}
+.zeko-total-reviews {
+	font-size: 13px;
+	color: var(--zl-gray-500);
+}
+.zeko-rating-bars {
+	flex: 1;
+}
+.zeko-rating-bar {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 6px;
+}
+.zeko-bar-label {
+	font-size: 13px;
+	width: 30px;
+	text-align: right;
+}
+.zeko-bar-track {
+	flex: 1;
+	height: 10px;
+	background: var(--zl-gray-200);
+	border-radius: 5px;
+	overflow: hidden;
+}
+.zeko-bar-fill {
+	height: 100%;
+	background: #f59e0b;
+	border-radius: 5px;
+}
+.zeko-bar-count {
+	font-size: 12px;
+	color: var(--zl-gray-500);
+	width: 36px;
+}
+.zeko-review-reply {
+	margin-top: 8px;
+	padding: 12px;
+	background: var(--zl-gray-50);
+	border-radius: 4px;
+	border-left: 3px solid var(--zl-primary);
+	font-size: 14px;
+}
+.zeko-submit-review {
+	margin-top: 32px;
+	padding-top: 24px;
+	border-top: 1px solid var(--zl-gray-200);
+}
+.zeko-submit-review textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid var(--zl-gray-300);
+	border-radius: 4px;
+	resize: vertical;
+	min-height: 80px;
+}
+.zeko-submit-review .button {
+	margin-top: 12px;
+}
+
+/* ─── Lesson Viewer ─────────────────────────────────────────── */
+.zeko-lesson-viewer {
+	display: flex;
+	min-height: 100vh;
+}
+.zeko-lesson-viewer .zeko-player-sidebar {
+	width: 320px;
+	background: var(--zl-gray-900);
+	color: #fff;
+	overflow-y: auto;
+	flex-shrink: 0;
+	position: sticky;
+	top: 0;
+	height: 100vh;
+}
+.zeko-sidebar-header {
+	padding: 16px;
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.zeko-back-to-course {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 12px;
+}
+.zeko-nav-lesson.current {
+	background: rgba(255,255,255,0.1);
+}
+.zeko-nav-lesson.current a {
+	color: #fff;
+	font-weight: 600;
+}
+.zeko-nav-icon {
+	width: 20px;
+	text-align: center;
+	flex-shrink: 0;
+}
+.zeko-nav-type {
+	font-size: 12px;
+	margin-left: auto;
+	opacity: 0.5;
+}
+.zeko-lesson-main {
+	flex: 1;
+	padding: 32px 40px;
+	max-width: 900px;
+}
+.zeko-lesson-header {
+	margin-bottom: 24px;
+}
+.zeko-lesson-header h1 {
+	margin: 0 0 8px;
+	font-size: 28px;
+}
+.zeko-lesson-meta {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+	font-size: 14px;
+	color: var(--zl-gray-500);
+}
+.zeko-lesson-type-badge {
+	padding: 3px 10px;
+	background: var(--zl-gray-100);
+	border-radius: 12px;
+	font-size: 12px;
+	font-weight: 600;
+}
+.zeko-lesson-body {
+	margin-bottom: 32px;
+}
+.zeko-lesson-text {
+	line-height: 1.7;
+	font-size: 16px;
+}
+.zeko-lesson-text p {
+	margin-bottom: 16px;
+}
+.zeko-lesson-footer {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+	padding-top: 24px;
+	border-top: 1px solid var(--zl-gray-200);
+}
+.zeko-completed-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	color: var(--zl-success);
+	font-weight: 600;
+}
+.zeko-locked-content {
+	text-align: center;
+	padding: 80px 40px;
+}
+.zeko-locked-content .dashicons {
+	font-size: 64px;
+	width: 64px;
+	height: 64px;
+	color: var(--zl-gray-300);
+	margin-bottom: 16px;
+}
+.zeko-locked-content h2 {
+	margin-bottom: 12px;
+}
+.zeko-video-wrapper {
+	margin-bottom: 24px;
+	border-radius: var(--zl-radius);
+	overflow: hidden;
+	background: #000;
+}
+.zeko-video-wrapper iframe,
+.zeko-video-wrapper video {
+	width: 100%;
+	aspect-ratio: 16/9;
+	border: none;
+}
+
+/* ─── Quiz Interface ────────────────────────────────────────── */
+.zeko-quiz-container {
+	background: #fff;
+	border: 1px solid var(--zl-gray-200);
+	border-radius: var(--zl-radius);
+	padding: 32px;
+}
+.zeko-quiz-instructions h2 {
+	margin-top: 0;
+}
+.zeko-quiz-info {
+	margin: 20px 0;
+}
+.zeko-quiz-info p {
+	margin: 6px 0;
+	font-size: 14px;
+}
+.zeko-quiz-timer {
+	position: sticky;
+	top: 0;
+	background: var(--zl-gray-900);
+	color: #fff;
+	text-align: center;
+	padding: 8px;
+	font-size: 20px;
+	font-weight: 700;
+	border-radius: 4px;
+	margin-bottom: 16px;
+	z-index: 10;
+}
+.zeko-quiz-progress {
+	text-align: center;
+	font-size: 14px;
+	color: var(--zl-gray-500);
+	margin-bottom: 20px;
+}
+.zeko-quiz-question {
+	margin-bottom: 24px;
+}
+.zeko-quiz-question h3 {
+	margin-bottom: 12px;
+}
+.zeko-q-points {
+	display: inline-block;
+	padding: 2px 8px;
+	background: var(--zl-gray-100);
+	border-radius: 3px;
+	font-size: 12px;
+	color: var(--zl-gray-500);
+	margin-bottom: 12px;
+}
+.zeko-options {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+.zeko-option {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 12px 16px;
+	border: 1px solid var(--zl-gray-200);
+	border-radius: 6px;
+	cursor: pointer;
+	transition: border-color 0.2s, background 0.2s;
+	font-size: 14px;
+}
+.zeko-option:hover {
+	border-color: var(--zl-primary);
+	background: rgba(79, 70, 229, 0.04);
+}
+.zeko-option input {
+	flex-shrink: 0;
+}
+.zeko-fill-blank {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid var(--zl-gray-300);
+	border-radius: 6px;
+	font-size: 16px;
+}
+.zeko-quiz-nav {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 24px;
+	padding-top: 16px;
+	border-top: 1px solid var(--zl-gray-200);
+}
+.zeko-results-header {
+	text-align: center;
+	padding: 32px;
+	border-radius: var(--zl-radius);
+	margin-bottom: 24px;
+}
+.zeko-results-header.passed {
+	background: #d4edda;
+	color: #155724;
+}
+.zeko-results-header.failed {
+	background: #f8d7da;
+	color: #721c24;
+}
+.zeko-score {
+	font-size: 64px;
+	font-weight: 700;
+	margin: 16px 0;
+}
+.zeko-results-breakdown {
+	text-align: center;
+	padding: 16px;
+	background: var(--zl-gray-50);
+	border-radius: var(--zl-radius);
+}
+
+/* ─── Assignment Interface ──────────────────────────────────── */
+.zeko-assignment-container {
+	background: #fff;
+	border: 1px solid var(--zl-gray-200);
+	border-radius: var(--zl-radius);
+	padding: 32px;
+}
+.zeko-assignment-container h2 {
+	margin-top: 0;
+}
+.zeko-assignment-instructions {
+	line-height: 1.7;
+	margin-bottom: 20px;
+}
+.zeko-assignment-details {
+	padding: 16px;
+	background: var(--zl-gray-50);
+	border-radius: var(--zl-radius);
+	margin-bottom: 24px;
+}
+.zeko-assignment-details p {
+	margin: 4px 0;
+	font-size: 14px;
+}
+.zeko-file-upload {
+	margin-bottom: 16px;
+}
+.zeko-dropzone {
+	border: 2px dashed var(--zl-gray-300);
+	border-radius: var(--zl-radius);
+	padding: 40px;
+	text-align: center;
+	cursor: pointer;
+	transition: border-color 0.2s, background 0.2s;
+}
+.zeko-dropzone:hover,
+.zeko-dropzone.dragover {
+	border-color: var(--zl-primary);
+	background: rgba(79, 70, 229, 0.04);
+}
+.zeko-dropzone .dashicons {
+	font-size: 32px;
+	width: 32px;
+	height: 32px;
+	color: var(--zl-gray-400);
+	margin-bottom: 8px;
+}
+.zeko-file-input {
+	display: none;
+}
+.zeko-file-name {
+	margin-top: 8px;
+	font-size: 14px;
+	color: var(--zl-success);
+	font-weight: 600;
+}
+.zeko-notes-field {
+	margin-bottom: 16px;
+}
+.zeko-notes-field label {
+	display: block;
+	margin-bottom: 4px;
+	font-weight: 600;
+}
+.zeko-notes-field textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid var(--zl-gray-300);
+	border-radius: 4px;
+	resize: vertical;
+}
+.zeko-assignment-submitted {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 16px;
+	background: #d4edda;
+	border-radius: var(--zl-radius);
+	color: #155724;
+}
+.zeko-assignment-submitted .dashicons {
+	font-size: 24px;
+	width: 24px;
+	height: 24px;
+}
+.zeko-assignment-graded {
+	padding: 20px;
+	background: var(--zl-gray-50);
+	border-radius: var(--zl-radius);
+}
+.zeko-assignment-graded h3 {
+	margin-top: 0;
+}
+.zeko-feedback {
+	padding: 12px;
+	background: #fff;
+	border: 1px solid var(--zl-gray-200);
+	border-radius: 4px;
+	margin-top: 8px;
+	line-height: 1.6;
+}
+.zeko-download-box {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 20px;
+	background: var(--zl-gray-50);
+	border-radius: var(--zl-radius);
+	margin-top: 16px;
+}
+
+/* ─── Notes Panel ───────────────────────────────────────────── */
+.zeko-notes-panel {
+	margin-top: 32px;
+	padding-top: 24px;
+	border-top: 1px solid var(--zl-gray-200);
+}
+.zeko-notes-panel h3 {
+	margin-bottom: 12px;
+}
+.zeko-note {
+	display: flex;
+	gap: 12px;
+	align-items: flex-start;
+	padding: 10px;
+	border-bottom: 1px solid var(--zl-gray-100);
+}
+.zeko-note-timestamp {
+	padding: 2px 8px;
+	background: var(--zl-gray-100);
+	border-radius: 3px;
+	font-size: 12px;
+	font-family: monospace;
+	flex-shrink: 0;
+}
+.zeko-note p {
+	margin: 0;
+	flex: 1;
+	font-size: 14px;
+}
+.zeko-delete-note {
+	background: none;
+	border: none;
+	color: var(--zl-gray-400);
+	cursor: pointer;
+	font-size: 18px;
+	padding: 0;
+	flex-shrink: 0;
+}
+.zeko-delete-note:hover {
+	color: var(--zl-danger);
+}
+.zeko-note-form {
+	display: flex;
+	gap: 8px;
+	margin-top: 12px;
+	align-items: flex-end;
+}
+.zeko-note-form textarea {
+	flex: 1;
+	padding: 8px 12px;
+	border: 1px solid var(--zl-gray-300);
+	border-radius: 4px;
+	resize: none;
+}
+
+/* ─── Student Dashboard ─────────────────────────────────────── */
+.zeko-student-dashboard {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.zeko-dashboard-stats {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	gap: 16px;
+	margin-bottom: 32px;
+}
+.zeko-stat-card {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	padding: 20px;
+	background: #fff;
+	border: 1px solid var(--zl-gray-200);
+	border-radius: var(--zl-radius);
+	box-shadow: var(--zl-shadow);
+}
+.zeko-stat-card .dashicons {
+	font-size: 28px;
+	width: 28px;
+	height: 28px;
+	color: var(--zl-primary);
+}
+.zeko-stat-content strong {
+	display: block;
+	font-size: 24px;
+	color: var(--zl-gray-900);
+}
+.zeko-stat-content span {
+	font-size: 13px;
+	color: var(--zl-gray-500);
+}
+.zeko-dashboard-tabs {
+	margin-bottom: 24px;
+}
+.zeko-dashboard-tabs .zeko-tab-nav {
+	border-bottom: 1px solid var(--zl-gray-200);
+}
+.zeko-empty-state {
+	text-align: center;
+	padding: 60px 20px;
+	color: var(--zl-gray-500);
+}
+.zeko-empty-state .dashicons {
+	font-size: 48px;
+	width: 48px;
+	height: 48px;
+	color: var(--zl-gray-300);
+	margin-bottom: 12px;
+}
+.zeko-my-course-card {
+	display: flex;
+	gap: 16px;
+	background: #fff;
+	border: 1px solid var(--zl-gray-200);
+	border-radius: var(--zl-radius);
+	overflow: hidden;
+}
+.zeko-my-course-thumb-wrap {
+	flex-shrink: 0;
+	width: 160px;
+	position: relative;
+	overflow: hidden;
+}
+.zeko-my-course-thumb {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.zeko-completed-overlay {
+	position: absolute;
+	inset: 0;
+	background: rgba(22, 163, 74, 0.85);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+}
+.zeko-completed-overlay .dashicons {
+	font-size: 32px;
+	width: 32px;
+	height: 32px;
+}
+.zeko-my-course-info {
+	flex: 1;
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+.zeko-my-course-info h4 {
+	margin: 0;
+	font-size: 16px;
+}
+.zeko-my-course-info h4 a {
+	text-decoration: none;
+	color: var(--zl-gray-900);
+}
+.zeko-last-accessed {
+	font-size: 12px;
+	color: var(--zl-gray-500);
+}
+.zeko-btn-sm {
+	padding: 6px 16px;
+	font-size: 13px;
+	align-self: flex-start;
+}
+
+/* ─── Certificates Grid ─────────────────────────────────────── */
+.zeko-certificates-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+	gap: 20px;
+}
+.zeko-certificate-card {
+	background: #fff;
+	border: 1px solid var(--zl-gray-200);
+	border-radius: var(--zl-radius);
+	padding: 24px;
+	text-align: center;
+}
+.zeko-cert-badge {
+	margin-bottom: 12px;
+}
+.zeko-cert-badge .dashicons {
+	font-size: 40px;
+	width: 40px;
+	height: 40px;
+	color: var(--zl-primary);
+}
+.zeko-certificate-card h3 {
+	margin: 0 0 8px;
+	font-size: 16px;
+}
+.zeko-certificate-card code {
+	font-size: 12px;
+	background: var(--zl-gray-100);
+	padding: 2px 6px;
+	border-radius: 3px;
+}
+.zeko-cert-actions {
+	margin-top: 12px;
+}
+
+/* ─── Breadcrumbs ───────────────────────────────────────────── */
+.zeko-breadcrumbs {
+	font-size: 13px;
+	color: var(--zl-gray-500);
+	margin-bottom: 16px;
+}
+.zeko-breadcrumbs a {
+	color: var(--zl-primary);
+	text-decoration: none;
+}
+.zeko-breadcrumbs a:hover {
+	text-decoration: underline;
+}
+
+/* ─── Announcements ─────────────────────────────────────────── */
+.zeko-announcements-list { margin-top: 24px; }
+.zeko-announcement-item {
+	background: #fffbe6;
+	border-left: 4px solid #f59e0b;
+	padding: 16px 20px;
+	margin-bottom: 12px;
+	border-radius: 0 6px 6px 0;
+}
+.zeko-announcement-item h4 {
+	margin: 0 0 6px;
+	font-size: 15px;
+	color: var(--zl-gray-900);
+}
+.zeko-announcement-item p {
+	margin: 0;
+	color: var(--zl-gray-600);
+	line-height: 1.6;
+}
+.zeko-announcement-item small {
+	display: block;
+	margin-top: 8px;
+	color: var(--zl-gray-400);
+	font-size: 12px;
+}
+.zeko-admin-announcement-form {
+	margin-bottom: 20px;
+}
+.zeko-admin-announcement-form textarea {
+	min-height: 80px;
+}
+
+/* ─── Learning Goals ────────────────────────────────────────── */
+.zeko-goals-list { margin-top: 16px; }
+.zeko-goal-item {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 12px 16px;
+	background: var(--zl-gray-50);
+	border-radius: 6px;
+	margin-bottom: 8px;
+	border: 1px solid var(--zl-gray-200);
+}
+.zeko-goal-text { flex: 1; color: var(--zl-gray-700); }
+.zeko-goal-item .button {
+	padding: 4px 10px;
+	font-size: 12px;
+}
+.zeko-goal-completed {
+	background: #ecfdf5;
+	border-color: #6ee7b7;
+}
+.zeko-goal-completed .zeko-goal-text {
+	text-decoration: line-through;
+	color: var(--zl-gray-400);
+}
+.zeko-goal-abandoned {
+	background: var(--zl-gray-100);
+	border-color: var(--zl-gray-300);
+	opacity: 0.6;
+}
+.zeko-goal-status {
+	font-size: 11px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+.zeko-goal-form {
+	margin-bottom: 16px;
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+.zeko-goal-form input[type="text"] {
+	flex: 2;
+	min-width: 200px;
+}
+.zeko-goal-form input[type="date"] {
+	flex: 1;
+	min-width: 140px;
+}
+
+/* ─── Discussion Replies ────────────────────────────────────── */
+.zeko-discussion-item { margin-bottom: 20px; }
+.zeko-discussion-replies {
+	margin-left: 24px;
+	padding-left: 16px;
+	border-left: 2px solid var(--zl-gray-200);
+	margin-top: 12px;
+}
+.zeko-discussion-reply {
+	padding: 10px 14px;
+	background: var(--zl-gray-50);
+	border-radius: 6px;
+	margin-bottom: 8px;
+}
+.zeko-discussion-reply p {
+	margin: 0 0 4px;
+	color: var(--zl-gray-700);
+}
+.zeko-discussion-reply small {
+	color: var(--zl-gray-400);
+	font-size: 12px;
+}
+.zeko-discussion-reply-form {
+	margin-top: 8px;
+	display: flex;
+	gap: 8px;
+}
+.zeko-discussion-reply-form textarea {
+	flex: 1;
+	min-height: 60px;
+	resize: vertical;
+}
+.zeko-discussion-votes {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	margin-right: 8px;
+}
+.zeko-vote-btn {
+	background: none;
+	border: 1px solid var(--zl-gray-300);
+	border-radius: 4px;
+	cursor: pointer;
+	padding: 2px 6px;
+	font-size: 14px;
+	color: var(--zl-gray-500);
+	transition: all 0.15s;
+}
+.zeko-vote-btn:hover {
+	border-color: var(--zl-primary);
+	color: var(--zl-primary);
+}
+.zeko-vote-count {
+	font-size: 13px;
+	font-weight: 600;
+	color: var(--zl-gray-600);
+	min-width: 18px;
+	text-align: center;
+}
+
+/* ─── Best Answer Badge ─────────────────────────────────────── */
+.zeko-best-answer-badge {
+	display: inline-block;
+	background: #ecfdf5;
+	color: #059669;
+	font-size: 11px;
+	font-weight: 600;
+	padding: 2px 8px;
+	border-radius: 10px;
+	margin-left: 8px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+/* ─── Review Instructor Reply ───────────────────────────────── */
+.zeko-instructor-reply {
+	margin-top: 10px;
+	padding: 12px 16px;
+	background: var(--zl-gray-50);
+	border-left: 3px solid var(--zl-primary);
+	border-radius: 0 6px 6px 0;
+}
+.zeko-instructor-reply strong {
+	display: block;
+	margin-bottom: 4px;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	color: var(--zl-primary);
+}
+.zeko-instructor-reply p {
+	margin: 0;
+	color: var(--zl-gray-600);
+	line-height: 1.5;
+}
+.zeko-review-reply-form {
+	margin-top: 8px;
+	display: flex;
+	gap: 8px;
+}
+.zeko-review-reply-form textarea {
+	flex: 1;
+	min-height: 50px;
+	resize: vertical;
+}
+
+/* ─── Admin Status Toggle ───────────────────────────────────── */
+.zeko-status-toggle {
+	cursor: pointer;
+}
+.zeko-grade-status {
+	font-size: 12px;
+	font-weight: 600;
+}
+.zeko-grade-status.graded {
+	color: #059669;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   INSTRUCTOR & STUDENT DASHBOARD
+   ══════════════════════════════════════════════════════════════ */
+
+/* ── Shared Card System ────────────────────────────────────── */
+.zeko-inst-card {
+	background: #fff;
+	border: 1px solid var(--zl-gray-200);
+	border-radius: var(--zl-radius);
+	box-shadow: var(--zl-shadow);
+	margin-bottom: 20px;
+	overflow: hidden;
+	transition: box-shadow 0.2s;
+}
+.zeko-inst-card:hover {
+	box-shadow: var(--zl-shadow-lg);
+}
+.zeko-inst-card-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 16px 20px;
+	border-bottom: 1px solid var(--zl-gray-100);
+	background: var(--zl-gray-50);
+}
+.zeko-inst-card-title {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.zeko-inst-card-title .dashicons {
+	font-size: 18px;
+	width: 18px;
+	height: 18px;
+	color: var(--zl-primary);
+}
+.zeko-inst-card-title h2 {
+	margin: 0;
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--zl-gray-900);
+}
+.zeko-inst-card-body {
+	padding: 20px;
+}
+
+/* ── Empty States (inline in cards) ────────────────────────── */
+.zeko-inst-empty-inline {
+	text-align: center;
+	padding: 32px 20px;
+	color: var(--zl-gray-500);
+}
+.zeko-inst-empty-inline .dashicons {
+	font-size: 32px;
+	width: 32px;
+	height: 32px;
+	color: var(--zl-gray-300);
+	display: block;
+	margin: 0 auto 8px;
+}
+.zeko-inst-empty-inline p {
+	margin: 0;
+	font-size: 14px;
+}
+
+/* ── Empty States (full) ───────────────────────────────────── */
+.zeko-inst-empty-state {
+	text-align: center;
+	padding: 48px 20px;
+}
+.zeko-inst-empty-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 72px;
+	height: 72px;
+	border-radius: 50%;
+	background: var(--zl-gray-100);
+	margin-bottom: 16px;
+}
+.zeko-inst-empty-icon .dashicons {
+	font-size: 32px;
+	width: 32px;
+	height: 32px;
+	color: var(--zl-gray-400);
+}
+.zeko-inst-empty-state h3 {
+	margin: 0 0 8px;
+	font-size: 18px;
+	color: var(--zl-gray-700);
+}
+.zeko-inst-empty-state p {
+	margin: 0 0 20px;
+	font-size: 14px;
+	color: var(--zl-gray-500);
+}
+
+/* ── Hero Profile Cards ────────────────────────────────────── */
+.zeko-inst-hero-card,
+.zeko-stu-hero-card {
+	position: relative;
+	border-radius: var(--zl-radius);
+	margin-bottom: 24px;
+	overflow: hidden;
+	box-shadow: var(--zl-shadow-lg);
+}
+.zeko-inst-hero-bg,
+.zeko-stu-hero-bg {
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(135deg, var(--zl-primary) 0%, #6366f1 50%, #8b5cf6 100%);
+}
+.zeko-inst-hero-content,
+.zeko-stu-hero-content {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+	padding: 32px;
+	color: #fff;
+	z-index: 1;
+}
+.zeko-inst-hero-left,
+.zeko-stu-hero-left {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	flex: 1;
+	min-width: 0;
+}
+.zeko-inst-hero-avatar,
+.zeko-stu-hero-avatar {
+	flex-shrink: 0;
+}
+.zeko-inst-avatar-lg,
+.zeko-stu-avatar-lg {
+	border-radius: 50%;
+	border: 3px solid rgba(255,255,255,0.3);
+	box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.zeko-inst-hero-info h1,
+.zeko-stu-hero-info h1 {
+	margin: 0 0 4px;
+	font-size: 22px;
+	font-weight: 700;
+	color: #fff;
+}
+.zeko-inst-hero-expertise,
+.zeko-stu-hero-bio {
+	margin: 0 0 8px;
+	font-size: 14px;
+	opacity: 0.85;
+}
+.zeko-inst-hero-bio {
+	margin: 0 0 12px;
+	font-size: 13px;
+	opacity: 0.75;
+	line-height: 1.5;
+}
+.zeko-inst-hero-badges,
+.zeko-stu-hero-chips {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-top: 10px;
+}
+.zeko-inst-badge-chip,
+.zeko-stu-chip {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	padding: 4px 12px;
+	background: rgba(255,255,255,0.15);
+	backdrop-filter: blur(4px);
+	border-radius: 20px;
+	font-size: 12px;
+	font-weight: 500;
+	color: #fff;
+	text-decoration: none;
+	transition: background 0.2s;
+}
+.zeko-inst-badge-chip .dashicons,
+.zeko-stu-chip .dashicons {
+	font-size: 14px;
+	width: 14px;
+	height: 14px;
+}
+.zeko-badge-social:hover {
+	background: rgba(255,255,255,0.3);
+}
+.zeko-stu-chip-fire {
+	background: rgba(249,115,22,0.3);
+}
+.zeko-inst-hero-actions,
+.zeko-stu-hero-actions {
+	display: flex;
+	gap: 10px;
+	flex-shrink: 0;
+}
+.zeko-btn-outline-white {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 8px 16px;
+	background: rgba(255,255,255,0.15);
+	color: #fff;
+	border: 1px solid rgba(255,255,255,0.3);
+	border-radius: 6px;
+	font-size: 13px;
+	font-weight: 500;
+	text-decoration: none;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+.zeko-btn-outline-white:hover {
+	background: rgba(255,255,255,0.25);
+	color: #fff;
+}
+.zeko-btn-outline-white .dashicons {
+	font-size: 15px;
+	width: 15px;
+	height: 15px;
+}
+
+/* ── Dashboard Shared ──────────────────────────────────────── */
+.zeko-instructor-dashboard,
+.zeko-student-dashboard {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 16px;
+}
+.zeko-inst-panel,
+.zeko-stu-panel {
+	animation: zekoFadeIn 0.2s ease;
+}
+@keyframes zekoFadeIn {
+	from { opacity: 0; transform: translateY(8px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+.zeko-inst-tab-content,
+.zeko-stu-tab-content {
+	min-height: 200px;
+}
+
+/* ── Stats Grids ───────────────────────────────────────────── */
+.zeko-inst-stats-grid,
+.zeko-stu-stats-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+	gap: 16px;
+	margin-bottom: 24px;
+}
+.zeko-inst-stat-card,
+.zeko-stu-stat-card {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	padding: 18px 20px;
+	background: #fff;
+	border: 1px solid var(--zl-gray-200);
+	border-radius: var(--zl-radius);
+	box-shadow: var(--zl-shadow);
+	transition: box-shadow 0.2s, transform 0.2s;
+}
+.zeko-inst-stat-card:hover,
+.zeko-stu-stat-card:hover {
+	box-shadow: var(--zl-shadow-lg);
+	transform: translateY(-2px);
+}
+.zeko-inst-stat-alert {
+	border-color: rgba(220,38,38,0.25);
+	background: rgba(220,38,38,0.03);
+}
+.zeko-inst-stat-icon,
+.zeko-stu-stat-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 10px;
+	flex-shrink: 0;
+}
+.zeko-inst-stat-icon .dashicons,
+.zeko-stu-stat-icon .dashicons {
+	font-size: 22px;
+	width: 22px;
+	height: 22px;
+}
+.zeko-inst-stat-content strong,
+.zeko-stu-stat-content strong {
+	display: block;
+	font-size: 22px;
+	color: var(--zl-gray-900);
+	line-height: 1.2;
+}
+.zeko-inst-stat-content span,
+.zeko-stu-stat-content span {
+	font-size: 13px;
+	color: var(--zl-gray-500);
+}
+
+/* ── Tab Navigation ────────────────────────────────────────── */
+.zeko-inst-tabs,
+.zeko-stu-tabs {
+	margin-bottom: 24px;
+}
+.zeko-inst-tab-nav,
+.zeko-stu-tab-nav {
+	display: flex;
+	gap: 4px;
+	border-bottom: 2px solid var(--zl-gray-200);
+	overflow-x: auto;
+	scrollbar-width: none;
+}
+.zeko-inst-tab-nav::-webkit-scrollbar,
+.zeko-stu-tab-nav::-webkit-scrollbar {
+	display: none;
+}
+.zeko-inst-tab-btn,
+.zeko-stu-tab-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 12px 18px;
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--zl-gray-500);
+	text-decoration: none;
+	border-bottom: 2px solid transparent;
+	margin-bottom: -2px;
+	transition: color 0.2s, border-color 0.2s;
+	white-space: nowrap;
+}
+.zeko-inst-tab-btn:hover,
+.zeko-stu-tab-btn:hover {
+	color: var(--zl-gray-700);
+}
+.zeko-inst-tab-btn.active,
+.zeko-stu-tab-btn.active {
+	color: var(--zl-primary);
+	border-bottom-color: var(--zl-primary);
+}
+.zeko-inst-tab-btn .dashicons,
+.zeko-stu-tab-btn .dashicons {
+	font-size: 16px;
+	width: 16px;
+	height: 16px;
+}
+
+/* ── Tables ────────────────────────────────────────────────── */
+.zeko-inst-table-wrap {
+	overflow-x: auto;
+}
+.zeko-inst-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 14px;
+}
+.zeko-inst-table thead {
+	background: var(--zl-gray-50);
+}
+.zeko-inst-table th {
+	padding: 10px 16px;
+	text-align: left;
+	font-weight: 600;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	color: var(--zl-gray-500);
+	border-bottom: 1px solid var(--zl-gray-200);
+}
+.zeko-inst-table td {
+	padding: 12px 16px;
+	border-bottom: 1px solid var(--zl-gray-100);
+	color: var(--zl-gray-700);
+	vertical-align: middle;
+}
+.zeko-inst-table tbody tr:hover {
+	background: var(--zl-gray-50);
+}
+.zeko-inst-table small {
+	display: block;
+	font-size: 12px;
+	color: var(--zl-gray-500);
+}
+.zeko-inst-row-actions {
+	display: flex;
+	gap: 6px;
+	align-items: center;
+}
+.zeko-inst-row-actions .button {
+	display: inline-flex;
+	align-items: center;
+}
+
+/* ── Student Cell ──────────────────────────────────────────── */
+.zeko-inst-student-cell {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.zeko-inst-student-cell img {
+	border-radius: 50%;
+	flex-shrink: 0;
+}
+.zeko-inst-student-cell div {
+	min-width: 0;
+}
+.zeko-inst-student-cell strong {
+	display: block;
+	font-size: 14px;
+	color: var(--zl-gray-900);
+}
+.zeko-inst-student-cell small {
+	display: block;
+	font-size: 12px;
+	color: var(--zl-gray-500);
+}
+
+/* ── Progress Bars ─────────────────────────────────────────── */
+.zeko-inst-progress-mini {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	min-width: 110px;
+}
+.zeko-inst-progress-bar {
+	flex: 1;
+	height: 6px;
+	background: var(--zl-gray-200);
+	border-radius: 3px;
+	overflow: hidden;
+}
+.zeko-inst-progress-fill {
+	height: 100%;
+	background: var(--zl-primary);
+	border-radius: 3px;
+	transition: width 0.4s ease;
+}
+.zeko-inst-progress-mini small {
+	font-size: 12px;
+	color: var(--zl-gray-500);
+	flex-shrink: 0;
+	min-width: 30px;
+}
+
+/* ── Status Badges ─────────────────────────────────────────── */
+.zeko-status-badge {
+	display: inline-flex;
+	align-items: center;
+	padding: 3px 10px;
+	border-radius: 12px;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+.zeko-status-published,
+.zeko-status-active {
+	background: rgba(22,163,74,0.1);
+	color: #16a34a;
+}
+.zeko-status-draft {
+	background: rgba(107,114,128,0.1);
+	color: #6b7280;
+}
+.zeko-status-completed {
+	background: rgba(79,70,229,0.1);
+	color: var(--zl-primary);
+}
+.zeko-status-pending {
+	background: rgba(234,179,8,0.1);
+	color: #ca8a04;
+}
+.zeko-status-paid {
+	background: rgba(22,163,74,0.1);
+	color: #16a34a;
+}
+
+/* ── Course Cards (Instructor Grid) ────────────────────────── */
+.zeko-inst-courses-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 20px;
+}
+.zeko-inst-course-card {
+	border: 1px solid var(--zl-gray-200);
+	border-radius: var(--zl-radius);
+	overflow: hidden;
+	background: #fff;
+	transition: box-shadow 0.25s, transform 0.25s;
+}
+.zeko-inst-course-card:hover {
+	box-shadow: var(--zl-shadow-lg);
+	transform: translateY(-3px);
+}
+.zeko-inst-course-thumb {
+	position: relative;
+	height: 150px;
+	overflow: hidden;
+	background: var(--zl-gray-100);
+}
+.zeko-inst-course-thumb img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.3s;
+}
+.zeko-inst-course-card:hover .zeko-inst-course-thumb img {
+	transform: scale(1.05);
+}
+.zeko-inst-course-thumb-placeholder {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(135deg, var(--zl-gray-100), var(--zl-gray-200));
+}
+.zeko-inst-course-thumb-placeholder .dashicons {
+	font-size: 36px;
+	width: 36px;
+	height: 36px;
+	color: var(--zl-gray-400);
+}
+.zeko-inst-course-thumb .zeko-status-badge {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background: rgba(255,255,255,0.95);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+.zeko-inst-course-body {
+	padding: 16px;
+}
+.zeko-inst-course-body h3 {
+	margin: 0 0 8px;
+	font-size: 16px;
+	color: var(--zl-gray-900);
+	line-height: 1.3;
+}
+.zeko-inst-course-meta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	margin-bottom: 10px;
+	font-size: 13px;
+	color: var(--zl-gray-500);
+}
+.zeko-inst-course-meta span {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+}
+.zeko-inst-course-meta .dashicons {
+	font-size: 14px;
+	width: 14px;
+	height: 14px;
+}
+.zeko-inst-course-price {
+	margin-bottom: 12px;
+}
+.zeko-inst-course-price strong {
+	font-size: 16px;
+	color: var(--zl-gray-900);
+}
+.zeko-free-badge {
+	display: inline-block;
+	padding: 2px 8px;
+	background: rgba(22,163,74,0.1);
+	color: #16a34a;
+	border-radius: 4px;
+	font-size: 12px;
+	font-weight: 600;
+}
+.zeko-inst-course-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	padding-top: 12px;
+	border-top: 1px solid var(--zl-gray-100);
+}
+.zeko-inst-course-actions .button {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	font-size: 12px;
+}
+.zeko-inst-course-actions .dashicons {
+	font-size: 14px;
+	width: 14px;
+	height: 14px;
+}
+
+/* ── Student Cards (Student Grid) ──────────────────────────── */
+.zeko-inst-students-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	gap: 16px;
+}
+.zeko-inst-student-card {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	padding: 16px;
+	background: var(--zl-gray-50);
+	border: 1px solid var(--zl-gray-200);
+	border-radius: var(--zl-radius);
+	transition: box-shadow 0.2s, transform 0.2s;
+}
+.zeko-inst-student-card:hover {
+	box-shadow: var(--zl-shadow);
+	transform: translateY(-1px);
+}
+.zeko-inst-student-card-avatar img {
+	border-radius: 50%;
+}
+.zeko-inst-student-card-info {
+	flex: 1;
+	min-width: 0;
+}
+.zeko-inst-student-card-info strong {
+	display: block;
+	font-size: 14px;
+	color: var(--zl-gray-900);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.zeko-inst-student-card-info small {
+	display: block;
+	font-size: 12px;
+	color: var(--zl-gray-500);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.zeko-inst-student-card-progress {
+	flex-shrink: 0;
+}
+.zeko-inst-progress-ring,
+.zeko-stu-progress-ring {
+	position: relative;
+	width: 48px;
+	height: 48px;
+}
+.zeko-inst-progress-ring svg,
+.zeko-stu-progress-ring svg {
+	width: 100%;
+	height: 100%;
+	transform: rotate(-90deg);
+}
+.zeko-inst-progress-ring .ring-fill,
+.zeko-stu-progress-ring .ring-fill {
+	transition: stroke-dasharray 0.6s ease;
+}
+.zeko-inst-progress-ring span,
+.zeko-stu-progress-ring span {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 10px;
+	font-weight: 700;
+	color: var(--zl-gray-700);
+}
+.zeko-inst-student-card-meta {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 4px;
+	flex-shrink: 0;
+}
+.zeko-inst-student-card-meta small {
+	font-size: 11px;
+	color: var(--zl-gray-500);
+}
+
+/* ── Revenue ───────────────────────────────────────────────── */
+.zeko-inst-revenue-cards {
+	display: grid;
+	grid-template-columns: 1fr 1.5fr;
+	gap: 16px;
+	margin-bottom: 20px;
+}
+.zeko-inst-revenue-highlight-card {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	padding: 28px 32px;
+	background: linear-gradient(135deg, var(--zl-primary), #7c3aed);
+	border-radius: var(--zl-radius);
+	color: #fff;
+	box-shadow: var(--zl-shadow-lg);
+}
+.zeko-inst-revenue-highlight-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 56px;
+	height: 56px;
+	background: rgba(255,255,255,0.15);
+	border-radius: 14px;
+	flex-shrink: 0;
+}
+.zeko-inst-revenue-highlight-icon .dashicons {
+	font-size: 28px;
+	width: 28px;
+	height: 28px;
+}
+.zeko-inst-revenue-highlight-info span {
+	display: block;
+	font-size: 13px;
+	opacity: 0.85;
+	margin-bottom: 2px;
+}
+.zeko-inst-revenue-highlight-info strong {
+	font-size: 28px;
+	font-weight: 700;
+}
+.zeko-inst-revenue-mini {
+	margin-bottom: 0;
+}
+.zeko-revenue-mini-content {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 16px;
+	padding: 24px 20px !important;
+}
+.zeko-revenue-mini-item {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 12px;
+	background: var(--zl-gray-50);
+	border-radius: 8px;
+}
+.zeko-revenue-mini-item .dashicons {
+	font-size: 20px;
+	width: 20px;
+	height: 20px;
+	color: var(--zl-primary);
+	flex-shrink: 0;
+}
+.zeko-revenue-mini-item div {
+	min-width: 0;
+}
+.zeko-revenue-mini-item strong {
+	display: block;
+	font-size: 16px;
+	color: var(--zl-gray-900);
+}
+.zeko-revenue-mini-item span {
+	font-size: 12px;
+	color: var(--zl-gray-500);
+}
+
+/* ── Announcements List ────────────────────────────────────── */
+.zeko-inst-announcements-list {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+.zeko-inst-announcement-item {
+	border: 1px solid var(--zl-gray-200);
+	border-radius: var(--zl-radius);
+	padding: 16px 20px;
+	transition: box-shadow 0.2s;
+}
+.zeko-inst-announcement-item:hover {
+	box-shadow: var(--zl-shadow);
+}
+.zeko-inst-announcement-item.is-pinned {
+	border-left: 3px solid var(--zl-primary);
+	background: rgba(79,70,229,0.02);
+}
+.zeko-inst-announcement-header {
+	margin-bottom: 8px;
+}
+.zeko-inst-announcement-title-row {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+.zeko-pin-icon {
+	font-size: 14px;
+	width: 14px;
+	height: 14px;
+	color: var(--zl-primary);
+}
+.zeko-inst-announcement-header h3 {
+	margin: 0 0 4px;
+	font-size: 15px;
+	color: var(--zl-gray-900);
+}
+.zeko-inst-announcement-meta {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 12px;
+	color: var(--zl-gray-500);
+}
+.zeko-sep {
+	color: var(--zl-gray-300);
+}
+.zeko-inst-announcement-course {
+	font-weight: 600;
+	color: var(--zl-primary);
+}
+.zeko-inst-announcement-body {
+	font-size: 14px;
+	color: var(--zl-gray-700);
+	line-height: 1.6;
+	margin-bottom: 10px;
+}
+.zeko-inst-announcement-actions {
+	display: flex;
+	gap: 8px;
+	padding-top: 10px;
+	border-top: 1px solid var(--zl-gray-100);
+}
+.zeko-inst-announcement-actions .button {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	font-size: 12px;
+}
+.zeko-inst-announcement-actions .dashicons {
+	font-size: 14px;
+	width: 14px;
+	height: 14px;
+}
+
+/* ── Modals ────────────────────────────────────────────────── */
+.zeko-inst-modal {
+	position: fixed;
+	inset: 0;
+	z-index: 100000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.zeko-inst-modal-overlay {
+	position: absolute;
+	inset: 0;
+	background: rgba(0,0,0,0.5);
+	backdrop-filter: blur(2px);
+}
+.zeko-inst-modal-content {
+	position: relative;
+	width: 100%;
+	max-width: 520px;
+	max-height: 90vh;
+	overflow-y: auto;
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+	animation: zekoModalIn 0.2s ease;
+}
+@keyframes zekoModalIn {
+	from { opacity: 0; transform: scale(0.95) translateY(10px); }
+	to { opacity: 1; transform: scale(1) translateY(0); }
+}
+.zeko-inst-modal-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 16px 20px;
+	border-bottom: 1px solid var(--zl-gray-200);
+}
+.zeko-inst-modal-header h3 {
+	margin: 0;
+	font-size: 18px;
+}
+.zeko-inst-modal-close {
+	background: none;
+	border: none;
+	font-size: 24px;
+	cursor: pointer;
+	color: var(--zl-gray-500);
+	padding: 4px 8px;
+	line-height: 1;
+}
+.zeko-inst-modal-close:hover {
+	color: var(--zl-gray-900);
+}
+.zeko-inst-modal-body {
+	padding: 20px;
+}
+.zeko-inst-modal-body p {
+	margin: 0 0 10px;
+}
+.zeko-modal-info {
+	padding: 8px 12px;
+	background: var(--zl-gray-50);
+	border-radius: 6px;
+	font-weight: 500;
+	color: var(--zl-gray-700);
+}
+.zeko-inst-modal-footer {
+	display: flex;
+	justify-content: flex-end;
+	gap: 8px;
+	padding: 16px 20px;
+	border-top: 1px solid var(--zl-gray-200);
+	background: var(--zl-gray-50);
+	border-radius: 0 0 12px 12px;
+}
+
+/* ── Form Elements ─────────────────────────────────────────── */
+.zeko-inst-form-group {
+	margin-bottom: 18px;
+}
+.zeko-inst-form-group label {
+	display: block;
+	font-weight: 600;
+	margin-bottom: 6px;
+	font-size: 14px;
+	color: var(--zl-gray-700);
+}
+.zeko-inst-form-group label .dashicons {
+	font-size: 15px;
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+	margin-right: 4px;
+}
+.zeko-required {
+	color: var(--zl-danger);
+}
+.zeko-inst-form-group input[type="text"],
+.zeko-inst-form-group input[type="number"],
+.zeko-inst-form-group input[type="url"],
+.zeko-inst-form-group textarea,
+.zeko-inst-form-group select {
+	width: 100%;
+	padding: 10px 12px;
+	border: 1px solid var(--zl-gray-300);
+	border-radius: 6px;
+	font-size: 14px;
+	transition: border-color 0.2s, box-shadow 0.2s;
+	box-sizing: border-box;
+}
+.zeko-inst-form-group input:focus,
+.zeko-inst-form-group textarea:focus,
+.zeko-inst-form-group select:focus {
+	border-color: var(--zl-primary);
+	outline: none;
+	box-shadow: 0 0 0 3px rgba(79,70,229,0.1);
+}
+.zeko-inst-form-group .description {
+	margin: 4px 0 0;
+	font-size: 12px;
+	color: var(--zl-gray-500);
+}
+.zeko-inst-form-row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 18px;
+}
+.zeko-form-row-3 {
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.zeko-inst-form-row .zeko-inst-form-group:last-child:nth-child(odd) {
+	grid-column: 1 / -1;
+}
+.zeko-input-with-prefix,
+.zeko-input-with-suffix {
+	display: flex;
+	align-items: center;
+	gap: 0;
+}
+.zeko-input-prefix {
+	padding: 10px 12px;
+	background: var(--zl-gray-100);
+	border: 1px solid var(--zl-gray-300);
+	border-right: none;
+	border-radius: 6px 0 0 6px;
+	font-size: 14px;
+	color: var(--zl-gray-500);
+}
+.zeko-input-with-prefix input {
+	border-radius: 0 6px 6px 0 !important;
+}
+.zeko-input-suffix {
+	padding: 10px 12px;
+	background: var(--zl-gray-100);
+	border: 1px solid var(--zl-gray-300);
+	border-left: none;
+	border-radius: 0 6px 6px 0;
+	font-size: 13px;
+	color: var(--zl-gray-500);
+}
+.zeko-inst-form-actions {
+	padding-top: 16px;
+	border-top: 1px solid var(--zl-gray-200);
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin-top: 8px;
+}
+.zeko-inst-form-actions .button {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+}
+.zeko-settings-status {
+	margin-left: 8px;
+	padding: 4px 12px;
+	border-radius: 4px;
+	font-size: 13px;
+	font-weight: 500;
+	display: none;
+}
+.zeko-settings-status.is-visible {
+	display: inline-block;
+	color: #16a34a;
+	background: rgba(22,163,74,0.1);
+}
+
+/* ── Settings Profile Row ──────────────────────────────────── */
+.zeko-settings-profile-row {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid var(--zl-gray-100);
+}
+.zeko-settings-avatar-section {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+.zeko-settings-avatar-preview {
+	border-radius: 50% !important;
+	border: 3px solid var(--zl-gray-200);
+}
+.zeko-settings-avatar-name {
+	display: block;
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--zl-gray-900);
+}
+.zeko-settings-avatar-email {
+	display: block;
+	font-size: 13px;
+	color: var(--zl-gray-500);
+}
+
+/* ── Toggle Grid (Notification Settings) ───────────────────── */
+.zeko-settings-toggle-grid {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+.zeko-toggle-item {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	padding: 14px 16px;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background 0.15s;
+}
+.zeko-toggle-item:hover {
+	background: var(--zl-gray-50);
+}
+.zeko-toggle-item input[type="checkbox"] {
+	display: none;
+}
+.zeko-toggle-switch {
+	position: relative;
+	width: 40px;
+	height: 22px;
+	background: var(--zl-gray-300);
+	border-radius: 11px;
+	flex-shrink: 0;
+	transition: background 0.25s;
+}
+.zeko-toggle-switch::after {
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 18px;
+	height: 18px;
+	background: #fff;
+	border-radius: 50%;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+	transition: transform 0.25s;
+}
+.zeko-toggle-item input:checked + .zeko-toggle-switch {
+	background: var(--zl-primary);
+}
+.zeko-toggle-item input:checked + .zeko-toggle-switch::after {
+	transform: translateX(18px);
+}
+.zeko-toggle-label {
+	flex: 1;
+	min-width: 0;
+}
+.zeko-toggle-label strong {
+	display: block;
+	font-size: 14px;
+	color: var(--zl-gray-900);
+	margin-bottom: 1px;
+}
+.zeko-toggle-label small {
+	display: block;
+	font-size: 12px;
+	color: var(--zl-gray-500);
+	line-height: 1.4;
+}
+
+/* ── Social Profile Grid ───────────────────────────────────── */
+.zeko-settings-social-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 16px;
+}
+.zeko-social-field label {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+/* ── Radio Cards (Theme Selector) ──────────────────────────── */
+.zeko-settings-radio-cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 12px;
+}
+.zeko-radio-card {
+	cursor: pointer;
+}
+.zeko-radio-card input[type="radio"] {
+	display: none;
+}
+.zeko-radio-card-inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 6px;
+	padding: 20px 16px;
+	border: 2px solid var(--zl-gray-200);
+	border-radius: var(--zl-radius);
+	text-align: center;
+	transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
+}
+.zeko-radio-card-inner .dashicons {
+	font-size: 24px;
+	width: 24px;
+	height: 24px;
+	color: var(--zl-gray-400);
+}
+.zeko-radio-card-inner strong {
+	font-size: 14px;
+	color: var(--zl-gray-700);
+}
+.zeko-radio-card-inner small {
+	font-size: 12px;
+	color: var(--zl-gray-500);
+}
+.zeko-radio-card input:checked + .zeko-radio-card-inner {
+	border-color: var(--zl-primary);
+	background: rgba(79,70,229,0.04);
+	box-shadow: 0 0 0 3px rgba(79,70,229,0.1);
+}
+.zeko-radio-card input:checked + .zeko-radio-card-inner .dashicons {
+	color: var(--zl-primary);
+}
+.zeko-radio-card-inner:hover {
+	border-color: var(--zl-gray-300);
+	background: var(--zl-gray-50);
+}
+
+/* ── Student Dashboard: Courses Grid ───────────────────────── */
+.zeko-stu-courses-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	gap: 20px;
+}
+.zeko-stu-course-card {
+	border: 1px solid var(--zl-gray-200);
+	border-radius: var(--zl-radius);
+	overflow: hidden;
+	background: #fff;
+	transition: box-shadow 0.25s, transform 0.25s;
+}
+.zeko-stu-course-card:hover {
+	box-shadow: var(--zl-shadow-lg);
+	transform: translateY(-3px);
+}
+.zeko-stu-course-thumb {
+	position: relative;
+	display: block;
+	height: 150px;
+	overflow: hidden;
+	background: var(--zl-gray-100);
+}
+.zeko-stu-course-thumb img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.3s;
+}
+.zeko-stu-course-card:hover .zeko-stu-course-thumb img {
+	transform: scale(1.05);
+}
+.zeko-stu-thumb-placeholder {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(135deg, var(--zl-gray-100), var(--zl-gray-200));
+}
+.zeko-stu-thumb-placeholder .dashicons {
+	font-size: 32px;
+	width: 32px;
+	height: 32px;
+	color: var(--zl-gray-400);
+}
+.zeko-stu-completed-badge {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 40px;
+	height: 40px;
+	background: #16a34a;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 2px 8px rgba(22,163,74,0.4);
+}
+.zeko-stu-completed-badge .dashicons {
+	font-size: 20px;
+	width: 20px;
+	height: 20px;
+	color: #fff;
+}
+.zeko-stu-progress-overlay {
+	position: absolute;
+	bottom: 8px;
+	right: 8px;
+}
+.zeko-stu-progress-overlay .zeko-stu-progress-ring {
+	width: 44px;
+	height: 44px;
+}
+.zeko-stu-progress-overlay .ring-bg {
+	stroke: rgba(255,255,255,0.3);
+}
+.zeko-stu-progress-overlay span {
+	color: #fff;
+	font-size: 9px;
+}
+.zeko-stu-course-info {
+	padding: 14px 16px;
+}
+.zeko-stu-course-info h4 {
+	margin: 0 0 8px;
+	font-size: 15px;
+	line-height: 1.3;
+}
+.zeko-stu-course-info h4 a {
+	color: var(--zl-gray-900);
+	text-decoration: none;
+}
+.zeko-stu-course-info h4 a:hover {
+	color: var(--zl-primary);
+}
+.zeko-progress-wrap {
+	margin-bottom: 8px;
+}
+.zeko-progress-bar {
+	height: 6px;
+	background: var(--zl-gray-200);
+	border-radius: 3px;
+	overflow: hidden;
+	margin-bottom: 4px;
+}
+.zeko-progress-fill {
+	height: 100%;
+	background: var(--zl-primary);
+	border-radius: 3px;
+	transition: width 0.4s ease;
+}
+.zeko-progress-text {
+	font-size: 12px;
+	color: var(--zl-gray-500);
+}
+.zeko-stu-last-accessed {
+	display: block;
+	font-size: 12px;
+	color: var(--zl-gray-500);
+	margin-bottom: 10px;
+}
+.zeko-stu-course-meta-row {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 8px;
+}
+.zeko-stu-course-price {
+	font-weight: 600;
+	font-size: 15px;
+	color: var(--zl-gray-900);
+}
+
+/* ── Student Certificates Grid ─────────────────────────────── */
+.zeko-stu-certificates-grid {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+.zeko-stu-cert-card {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	padding: 18px 20px;
+	border: 1px solid var(--zl-gray-200);
+	border-radius: var(--zl-radius);
+	background: #fff;
+	transition: box-shadow 0.2s;
+}
+.zeko-stu-cert-card:hover {
+	box-shadow: var(--zl-shadow);
+}
+.zeko-stu-cert-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 48px;
+	height: 48px;
+	background: linear-gradient(135deg, #fbbf24, #f59e0b);
+	border-radius: 12px;
+	flex-shrink: 0;
+}
+.zeko-stu-cert-icon .dashicons {
+	font-size: 24px;
+	width: 24px;
+	height: 24px;
+	color: #fff;
+}
+.zeko-stu-cert-body {
+	flex: 1;
+	min-width: 0;
+}
+.zeko-stu-cert-body h3 {
+	margin: 0 0 4px;
+	font-size: 15px;
+	color: var(--zl-gray-900);
+}
+.zeko-stu-cert-meta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	font-size: 12px;
+	color: var(--zl-gray-500);
+}
+.zeko-stu-cert-meta code {
+	font-size: 11px;
+	padding: 2px 6px;
+	background: var(--zl-gray-100);
+	border-radius: 3px;
+}
+.zeko-stu-cert-actions {
+	flex-shrink: 0;
+}
+
+/* ── Course Creator — Sub-Tab Navigation ───────────────────── */
+.zeko-cr-tabs {
+	display: flex;
+	gap: 0;
+	border-bottom: 2px solid var(--zl-gray-200);
+	padding: 0 24px;
+	background: var(--zl-gray-50);
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+.zeko-cr-tab-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 14px 20px;
+	border: none;
+	background: none;
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--zl-gray-500);
+	cursor: pointer;
+	border-bottom: 2px solid transparent;
+	margin-bottom: -2px;
+	white-space: nowrap;
+	transition: color 0.2s, border-color 0.2s;
+}
+.zeko-cr-tab-btn .dashicons {
+	font-size: 16px;
+	width: 16px;
+	height: 16px;
+	opacity: 0.6;
+}
+.zeko-cr-tab-btn:hover {
+	color: var(--zl-gray-700);
+}
+.zeko-cr-tab-btn.active {
+	color: var(--zl-primary);
+	border-bottom-color: var(--zl-primary);
+	font-weight: 600;
+}
+.zeko-cr-tab-btn.active .dashicons {
+	opacity: 1;
+}
+.zeko-cr-tab-panel {
+	display: none;
+}
+.zeko-cr-tab-panel.active {
+	display: block;
+}
+.zeko-cr-form-footer {
+	padding: 20px 24px;
+	border-top: 1px solid var(--zl-gray-200);
+	background: var(--zl-gray-50);
+	border-radius: 0 0 12px 12px;
+}
+
+/* ── Course Creator — Rich Text Editor ─────────────────────── */
+.zeko-rich-editor {
+	border: 1px solid var(--zl-gray-300);
+	border-radius: var(--zl-radius);
+	overflow: hidden;
+	background: #fff;
+	transition: border-color 0.2s, box-shadow 0.2s;
+}
+.zeko-rich-editor:focus-within {
+	border-color: var(--zl-primary);
+	box-shadow: 0 0 0 3px rgba(79,70,229,0.1);
+}
+.zeko-rich-toolbar {
+	display: flex;
+	gap: 2px;
+	padding: 6px 8px;
+	background: var(--zl-gray-50);
+	border-bottom: 1px solid var(--zl-gray-200);
+}
+.zeko-rich-toolbar button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 32px;
+	height: 32px;
+	border: none;
+	background: none;
+	border-radius: 4px;
+	cursor: pointer;
+	color: var(--zl-gray-600);
+	transition: background 0.15s, color 0.15s;
+}
+.zeko-rich-toolbar button:hover {
+	background: var(--zl-gray-200);
+	color: var(--zl-gray-800);
+}
+.zeko-rich-toolbar button .dashicons {
+	font-size: 18px;
+	width: 18px;
+	height: 18px;
+}
+.zeko-rich-content {
+	min-height: 140px;
+	padding: 14px 16px;
+	font-size: 14px;
+	line-height: 1.7;
+	outline: none;
+	color: var(--zl-gray-800);
+}
+.zeko-rich-content:empty::before {
+	content: attr(data-placeholder);
+	color: var(--zl-gray-400);
+	pointer-events: none;
+}
+.zeko-rich-content a {
+	color: var(--zl-primary);
+	text-decoration: underline;
+}
+.zeko-rich-content ul,
+.zeko-rich-content ol {
+	margin: 8px 0;
+	padding-left: 24px;
+}
+.zeko-rich-content p {
+	margin: 6px 0;
+}
+.zeko-rich-hidden {
+	position: absolute;
+	left: -9999px;
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+}
+.zeko-rich-compact .zeko-rich-content {
+	min-height: 80px;
+}
+
+/* ── Course Creator — Skills / Tags ────────────────────────── */
+.zeko-skills-area {
+	position: relative;
+}
+.zeko-skills-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	margin-bottom: 8px;
+	min-height: 28px;
+}
+.zeko-skill-tag {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	padding: 4px 10px;
+	background: rgba(79,70,229,0.08);
+	color: var(--zl-primary);
+	border-radius: 20px;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 1;
+}
+.zeko-remove-skill {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 16px;
+	height: 16px;
+	border: none;
+	background: none;
+	color: var(--zl-primary);
+	cursor: pointer;
+	font-size: 14px;
+	padding: 0;
+	border-radius: 50%;
+	opacity: 0.6;
+	line-height: 1;
+}
+.zeko-remove-skill:hover {
+	opacity: 1;
+	background: rgba(79,70,229,0.15);
+}
+.zeko-skill-search-input {
+	width: 100%;
+	padding: 8px 12px;
+	border: 1px solid var(--zl-gray-300);
+	border-radius: var(--zl-radius);
+	font-size: 14px;
+}
+.zeko-skill-search-input:focus {
+	border-color: var(--zl-primary);
+	box-shadow: 0 0 0 3px rgba(79,70,229,0.1);
+	outline: none;
+}
+.zeko-skill-results {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	margin-top: 4px;
+	background: #fff;
+	border: 1px solid var(--zl-gray-200);
+	border-radius: var(--zl-radius);
+	box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+	max-height: 200px;
+	overflow-y: auto;
+}
+.zeko-skill-option {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 14px;
+	cursor: pointer;
+	font-size: 14px;
+	transition: background 0.15s;
+}
+.zeko-skill-option:hover {
+	background: var(--zl-gray-50);
+}
+.zeko-skill-option small {
+	color: var(--zl-gray-400);
+	font-size: 12px;
+}
+
+/* ── Course Creator — Thumbnail Upload Area ────────────────── */
+.zeko-thumb-upload-area {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.zeko-thumb-preview-box {
+	min-height: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px dashed var(--zl-gray-300);
+	border-radius: var(--zl-radius);
+	background: var(--zl-gray-50);
+	overflow: hidden;
+	transition: border-color 0.2s;
+}
+.zeko-thumb-preview-box:hover {
+	border-color: var(--zl-primary);
+}
+.zeko-thumb-preview-box img {
+	max-width: 100%;
+	max-height: 200px;
+	object-fit: contain;
+	border-radius: 0;
+}
+.zeko-thumb-placeholder {
+	text-align: center;
+	padding: 24px;
+	color: var(--zl-gray-400);
+}
+.zeko-thumb-placeholder .dashicons {
+	font-size: 40px;
+	width: 40px;
+	height: 40px;
+	display: block;
+	margin: 0 auto 8px;
+	opacity: 0.4;
+}
+.zeko-thumb-placeholder p {
+	margin: 0;
+	font-size: 13px;
+}
+.zeko-thumb-actions {
+	display: flex;
+	gap: 8px;
+}
+
+/* ── Course Creator — 4-Column Form Row ────────────────────── */
+.zeko-form-row-4 {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 16px;
+}
+
+/* ── Course Creator — Checkbox Field ───────────────────────── */
+.zeko-checkbox-field label {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	cursor: pointer;
+	font-weight: 500;
+}
+.zeko-checkbox-field input[type="checkbox"] {
+	width: 18px;
+	height: 18px;
+	accent-color: var(--zl-primary);
+}
+.zeko-checkbox-field .description {
+	margin-top: 6px;
+	color: var(--zl-gray-500);
+	font-size: 13px;
+}
+
+/* ── Course Creator — Lesson Preview Toggle ────────────────── */
+.zeko-lesson-preview-toggle {
+	display: inline-flex;
+	align-items: center;
+	gap: 0;
+	cursor: pointer;
+	padding: 4px;
+	border-radius: 4px;
+	color: var(--zl-gray-400);
+	transition: color 0.15s, background 0.15s;
+	flex-shrink: 0;
+}
+.zeko-lesson-preview-toggle input {
+	display: none;
+}
+.zeko-lesson-preview-toggle .dashicons {
+	font-size: 18px;
+	width: 18px;
+	height: 18px;
+}
+.zeko-lesson-preview-toggle:has(input:checked) {
+	color: var(--zl-primary);
+	background: rgba(79,70,229,0.08);
+}
+.zeko-lesson-preview-toggle:hover {
+	background: var(--zl-gray-100);
+}
+
+/* ── Course Creator — Section Description Input ────────────── */
+.zeko-section-desc-input {
+	flex: 1;
+	min-width: 140px;
+	border: 1px solid transparent;
+	background: transparent;
+	font-size: 13px;
+	color: var(--zl-gray-500);
+	padding: 4px 8px;
+	border-radius: 4px;
+}
+.zeko-section-desc-input:focus {
+	background: #fff;
+	border-color: var(--zl-gray-300);
+	color: var(--zl-gray-700);
+}
+
+/* ── Course Creator — Lesson Minutes Input ─────────────────── */
+.zeko-lesson-minutes-input {
+	width: 56px;
+	padding: 4px 6px;
+	border: 1px solid var(--zl-gray-300);
+	border-radius: 4px;
+	font-size: 13px;
+	text-align: center;
+	background: #fff;
+	flex-shrink: 0;
+}
+.zeko-lesson-minutes-input:focus {
+	border-color: var(--zl-primary);
+	box-shadow: 0 0 0 2px rgba(79,70,229,0.1);
+	outline: none;
+}
+
+/* ── Course Creator — Main Add Section Button ──────────────── */
+.zeko-add-section-btn-main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	width: 100%;
+	padding: 14px;
+	margin-top: 8px;
+	border: 2px dashed var(--zl-gray-300);
+	background: var(--zl-gray-50);
+	border-radius: var(--zl-radius);
+	color: var(--zl-gray-500);
+	font-size: 14px;
+	font-weight: 500;
+	transition: all 0.2s;
+	cursor: pointer;
+}
+.zeko-add-section-btn-main:hover {
+	border-color: var(--zl-primary);
+	color: var(--zl-primary);
+	background: rgba(79,70,229,0.04);
+}
+
+/* ── Course Creator — Price Input with Prefix ──────────────── */
+.zeko-input-with-prefix {
+	display: flex;
+	align-items: stretch;
+}
+.zeko-input-prefix {
+	display: inline-flex;
+	align-items: center;
+	padding: 0 12px;
+	background: var(--zl-gray-100);
+	border: 1px solid var(--zl-gray-300);
+	border-right: none;
+	border-radius: var(--zl-radius) 0 0 var(--zl-radius);
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--zl-gray-600);
+}
+.zeko-input-with-prefix input {
+	border-radius: 0 var(--zl-radius) var(--zl-radius) 0;
+	flex: 1;
+}
+
+/* ── Course Creator (Frontend) — Section Builder ───────────── */
+.zeko-inst-section-builder {
+	min-height: 80px;
+}
+.zeko-inst-section-item {
+	border: 1px solid var(--zl-gray-200);
+	border-radius: var(--zl-radius);
+	margin-bottom: 16px;
+	background: #fff;
+	overflow: hidden;
+}
+.zeko-inst-section-item-header {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 12px 16px;
+	background: var(--zl-gray-50);
+	border-bottom: 1px solid var(--zl-gray-200);
+}
+.zeko-inst-section-item-header .zeko-section-title-input {
+	flex: 1;
+	border: 1px solid transparent;
+	background: transparent;
+	font-weight: 600;
+	font-size: 15px;
+	padding: 6px 8px;
+	border-radius: 4px;
+}
+.zeko-inst-section-item-header .zeko-section-title-input:focus {
+	background: #fff;
+	border-color: var(--zl-primary);
+	box-shadow: 0 0 0 3px rgba(79,70,229,0.1);
+}
+.zeko-inst-section-actions,
+.zeko-inst-lesson-actions {
+	display: flex;
+	gap: 4px;
+	flex-shrink: 0;
+}
+.zeko-drag-handle {
+	cursor: grab;
+	color: var(--zl-gray-400);
+	font-size: 18px;
+	width: 18px;
+	height: 18px;
+	flex-shrink: 0;
+}
+.zeko-drag-handle:active {
+	cursor: grabbing;
+}
+.zeko-inst-lessons-list {
+	padding: 8px 16px;
+}
+.zeko-inst-lesson-item {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 8px 0;
+	border-bottom: 1px solid var(--zl-gray-100);
+}
+.zeko-inst-lesson-item:last-child {
+	border-bottom: none;
+}
+.zeko-inst-lesson-item-header {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	width: 100%;
+}
+.zeko-lesson-title-input {
+	flex: 1;
+	border: 1px solid transparent;
+	background: transparent;
+	font-size: 14px;
+	padding: 6px 8px;
+	border-radius: 4px;
+}
+.zeko-lesson-title-input:focus {
+	background: #fff;
+	border-color: var(--zl-primary);
+	box-shadow: 0 0 0 3px rgba(79,70,229,0.1);
+}
+.zeko-lesson-type-select {
+	padding: 4px 8px;
+	border: 1px solid var(--zl-gray-300);
+	border-radius: 4px;
+	font-size: 13px;
+	background: #fff;
+	flex-shrink: 0;
+}
+.zeko-inst-add-lesson-row {
+	padding: 10px 16px;
+	border-top: 1px solid var(--zl-gray-100);
+}
+.zeko-inst-section-builder .button .dashicons {
+	font-size: 14px;
+	width: 14px;
+	height: 14px;
+}
+.zeko-inst-thumb-field {
+	display: flex;
+	align-items: flex-end;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+#zeko-thumb-preview img {
+	border: 1px solid var(--zl-gray-200);
+	border-radius: var(--zl-radius);
+}
+
+/* ── Responsive ────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+	.zeko-inst-revenue-cards {
+		grid-template-columns: 1fr;
+	}
+	.zeko-revenue-mini-content {
+		grid-template-columns: 1fr;
+	}
+}
+@media (max-width: 768px) {
+	.zeko-inst-hero-content,
+	.zeko-stu-hero-content {
+		flex-direction: column;
+		text-align: center;
+		padding: 24px;
+	}
+	.zeko-inst-hero-left,
+	.zeko-stu-hero-left {
+		flex-direction: column;
+		align-items: center;
+	}
+	.zeko-inst-hero-badges,
+	.zeko-stu-hero-chips {
+		justify-content: center;
+	}
+	.zeko-inst-hero-actions,
+	.zeko-stu-hero-actions {
+		justify-content: center;
+		width: 100%;
+	}
+	.zeko-inst-hero-actions .button,
+	.zeko-stu-hero-actions .button {
+		flex: 1;
+		justify-content: center;
+	}
+	.zeko-inst-stats-grid,
+	.zeko-stu-stats-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.zeko-inst-tab-btn,
+	.zeko-stu-tab-btn {
+		padding: 10px 14px;
+		font-size: 13px;
+	}
+	.zeko-inst-tab-btn .dashicons,
+	.zeko-stu-tab-btn .dashicons {
+		display: none;
+	}
+	.zeko-inst-courses-grid,
+	.zeko-stu-courses-grid {
+		grid-template-columns: 1fr;
+	}
+	.zeko-inst-students-grid {
+		grid-template-columns: 1fr;
+	}
+	.zeko-inst-form-row,
+	.zeko-form-row-3,
+	.zeko-form-row-4 {
+		grid-template-columns: 1fr;
+	}
+	.zeko-settings-social-grid {
+		grid-template-columns: 1fr;
+	}
+	.zeko-cr-tabs {
+		padding: 0 16px;
+	}
+	.zeko-cr-tab-btn {
+		padding: 12px 14px;
+		font-size: 13px;
+	}
+	.zeko-cr-tab-btn .dashicons {
+		display: none;
+	}
+	.zeko-inst-section-item-header {
+		flex-wrap: wrap;
+	}
+	.zeko-section-desc-input {
+		min-width: 100%;
+		border-top: 1px solid var(--zl-gray-200);
+		margin-top: 4px;
+		padding-top: 8px;
+	}
+	.zeko-inst-lesson-item-header {
+		flex-wrap: wrap;
+	}
+	.zeko-settings-radio-cards {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+@media (max-width: 480px) {
+	.zeko-inst-stats-grid,
+	.zeko-stu-stats-grid {
+		grid-template-columns: 1fr;
+	}
+	.zeko-settings-radio-cards {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* ─── Dark Mode ──────────────────────────────────────────────── */
+[data-theme="dark"] :root {
+    --zl-primary: #818cf8;
+    --zl-primary-hover: #6366f1;
+    --zl-success: #22c55e;
+    --zl-warning: #fbbf24;
+    --zl-danger: #f87171;
+    --zl-gray-50: #1f2937;
+    --zl-gray-100: #111827;
+    --zl-gray-200: #374151;
+    --zl-gray-300: #4b5563;
+    --zl-gray-500: #a1a1aa;
+    --zl-gray-700: #d1d5db;
+    --zl-gray-900: #f9fafb;
+    --zl-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    --zl-shadow-lg: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+[data-theme="dark"] .zeko-course-card,
+[data-theme="dark"] .zeko-card-body,
+[data-theme="dark"] .zeko-inst-course-row,
+[data-theme="dark"] .zeko-stu-course-row,
+[data-theme="dark"] .zeko-settings-panel,
+[data-theme="dark"] .zeko-course-content,
+[data-theme="dark"] .zeko-lesson-item,
+[data-theme="dark"] .zeko-quiz-panel,
+[data-theme="dark"] .zeko-discussion-form,
+[data-theme="dark"] .zeko-activity-item {
+    background: var(--zl-gray-100);
+    color: var(--zl-gray-700);
+}
+
+[data-theme="dark"] .zeko-card-body h3,
+[data-theme="dark"] .zeko-card-body p,
+[data-theme="dark"] .zeko-inst-course-row h4,
+[data-theme="dark"] .zeko-stu-course-row h4,
+[data-theme="dark"] .zeko-settings-panel h3 {
+    color: var(--zl-gray-900);
+}
+
+[data-theme="dark"] .zeko-search-input,
+[data-theme="dark"] .zeko-filter-select,
+[data-theme="dark"] .zeko-settings-input,
+[data-theme="dark"] textarea,
+[data-theme="dark"] input[type="text"],
+[data-theme="dark"] input[type="email"],
+[data-theme="dark"] input[type="search"] {
+    background: var(--zl-gray-200);
+    border-color: var(--zl-gray-300);
+    color: var(--zl-gray-900);
+}
+
+[data-theme="dark"] .zeko-course-progress-bar {
+    background: var(--zl-gray-200);
+}
+
+[data-theme="dark"] .zeko-discussion-item,
+[data-theme="dark"] .zeko-activity-item {
+    border-color: var(--zl-gray-200);
+}
+
+[data-theme="dark"] .zeko-nav-tab {
+    background: var(--zl-gray-100);
+    color: var(--zl-gray-500);
+}
+
+[data-theme="dark"] .zeko-nav-tab.active {
+    background: var(--zl-gray-200);
+    color: var(--zl-gray-900);
+}
+
+[data-theme="dark"] .zeko-badge {
+    background: var(--zl-gray-200);
+    color: var(--zl-gray-700);
+}

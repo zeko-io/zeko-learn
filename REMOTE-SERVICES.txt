@@ -1,0 +1,30 @@
+REMOTE SERVICES — Zeko Learn
+============================
+
+Zeko Learn performs no server-side outbound HTTP requests. The only external
+service it touches is the client-side video embedding described below.
+
+-------------------------------------------------------------------------------
+1. YouTube / Vimeo lesson-video embeds (client-side, optional)
+-------------------------------------------------------------------------------
+Hosts rendered (browser loads the iframe; no server call):
+   - https://www.youtube-nocookie.com/embed/{id}   (default; privacy-enhanced
+     "nocookie" domain) or https://www.youtube.com/embed/{id} (only if the
+     admin disables the nocookie setting)
+   - https://player.vimeo.com/video/{id}
+Code     : includes/class-zeko-learn-embeds.php lines 39-67 (normalization +
+           host allow-list: www.youtube-nocookie.com, www.youtube.com,
+           player.vimeo.com).
+Data sent: when a visitor plays a lesson the video provider receives the
+           embed request, the visitor's IP address, and interaction data per
+           YouTube/Vimeo's own policies. No cookie is set on the nocookie
+           domain by default. Zeko Learn sends no user profile, email, or
+           account data to the providers.
+When     : only when a course author adds a video URL AND embeds are enabled.
+Opt-out  : admin setting "Disable video embeds" (option
+           zeko_learn_embeds_enabled); when disabled, no third-party player is
+           ever loaded.
+Privacy  : disclosed in the privacy-policy content Zeko Core contributes
+           (Tools > Privacy) and in the readme.txt "External services" section.
+
+No other outbound requests are made by Zeko Learn.

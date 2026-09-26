@@ -1,0 +1,363 @@
+/* Zeko Learn — Admin Styles */
+
+/* ─── Dashboard Stats ────────────────────────────── */
+.zeko-admin-stats {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 16px;
+	margin: 20px 0;
+}
+.zeko-admin-stat {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-left: 4px solid #1d2327;
+	border-radius: 4px;
+	padding: 16px 20px;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+.zeko-admin-stat .dashicons {
+	font-size: 32px;
+	width: 32px;
+	height: 32px;
+	color: #1d2327;
+}
+.zeko-admin-stat .zeko-stat-value {
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 1;
+	color: #1d2327;
+}
+.zeko-admin-stat .zeko-stat-label {
+	font-size: 13px;
+	color: #646970;
+	margin-top: 2px;
+}
+
+/* ─── Tabs ───────────────────────────────────────── */
+.zeko-admin-tabs {
+	display: flex;
+	gap: 0;
+	border-bottom: 1px solid #c3c4c7;
+	margin-bottom: 20px;
+}
+.zeko-admin-tab {
+	padding: 10px 16px;
+	background: none;
+	border: none;
+	border-bottom: 2px solid transparent;
+	cursor: pointer;
+	font-size: 14px;
+	color: #50575e;
+}
+.zeko-admin-tab:hover {
+	color: #135e96;
+}
+.zeko-admin-tab.active {
+	border-bottom-color: #2271b1;
+	color: #135e96;
+	font-weight: 600;
+}
+.zeko-admin-tab-content {
+	display: none;
+}
+.zeko-admin-tab-content.active {
+	display: block;
+}
+
+/* ─── Form Sections ──────────────────────────────── */
+.zeko-form-section {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 20px 24px;
+	margin-bottom: 20px;
+}
+.zeko-form-section h3 {
+	margin-top: 0;
+	padding-bottom: 12px;
+	border-bottom: 1px solid #e0e0e0;
+}
+.zeko-form-row {
+	display: flex;
+	gap: 16px;
+	margin-bottom: 16px;
+	align-items: flex-start;
+}
+.zeko-form-row > label {
+	min-width: 160px;
+	padding-top: 6px;
+	font-weight: 600;
+}
+.zeko-form-row > .zeko-field {
+	flex: 1;
+}
+
+/* ─── Curriculum Builder ─────────────────────────── */
+#zeko-curriculum-builder {
+	margin-top: 12px;
+}
+.zeko-section {
+	background: #f6f7f7;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	margin-bottom: 12px;
+	padding: 16px;
+}
+.zeko-section-header {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.zeko-section-header input[type="text"] {
+	flex: 1;
+	min-width: 200px;
+}
+.zeko-section-header .button {
+	flex-shrink: 0;
+}
+.zeko-lessons {
+	margin: 12px 0 8px 24px;
+}
+.zeko-lesson {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 3px;
+	padding: 8px 12px;
+	margin-bottom: 6px;
+	flex-wrap: wrap;
+}
+.zeko-lesson input[type="text"] {
+	flex: 1;
+	min-width: 180px;
+}
+.zeko-lesson select {
+	flex-shrink: 0;
+}
+.zeko-drag-handle {
+	cursor: grab;
+	color: #999;
+	font-size: 18px;
+	padding: 0 4px;
+	flex-shrink: 0;
+}
+.zeko-drag-handle:active {
+	cursor: grabbing;
+}
+.zeko-add-lesson,
+.zeko-add-section,
+#zeko-add-section {
+	margin-top: 8px;
+}
+
+/* ─── Skill Tags ─────────────────────────────────── */
+#zeko-course-skills {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	margin-bottom: 8px;
+}
+.zeko-skill-tag {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	background: #e8f0fe;
+	border: 1px solid #b3d4fc;
+	border-radius: 3px;
+	padding: 4px 10px;
+	font-size: 13px;
+}
+.zeko-skill-tag .zeko-remove-skill {
+	background: none;
+	border: none;
+	color: #c00;
+	cursor: pointer;
+	padding: 0;
+	font-size: 16px;
+	line-height: 1;
+}
+#zeko-skill-suggestions {
+	border: 1px solid #dcdcde;
+	max-height: 150px;
+	overflow-y: auto;
+}
+.zeko-skill-suggestion {
+	padding: 8px 12px;
+	cursor: pointer;
+	border-bottom: 1px solid #f0f0f1;
+}
+.zeko-skill-suggestion:hover {
+	background: #f0f0f1;
+}
+
+/* ─── Quiz Builder ───────────────────────────────── */
+#zeko-questions-builder {
+	margin-top: 12px;
+}
+.zeko-question {
+	background: #f6f7f7;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 16px;
+	margin-bottom: 12px;
+}
+.zeko-question-header {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 12px;
+}
+.zeko-question-header input[type="text"] {
+	flex: 1;
+	min-width: 200px;
+}
+.zeko-question-header select {
+	flex-shrink: 0;
+}
+.zeko-question-header input[type="number"] {
+	width: 60px;
+	flex-shrink: 0;
+}
+.zeko-question-options,
+.zeko-question-explanation,
+.zeko-question-correct {
+	margin-top: 8px;
+}
+.zeko-question-options label,
+.zeko-question-explanation label,
+.zeko-question-correct label {
+	display: block;
+	font-weight: 600;
+	margin-bottom: 4px;
+	font-size: 13px;
+}
+.zeko-question-options textarea,
+.zeko-question-explanation textarea {
+	width: 100%;
+}
+.zeko-question-correct input {
+	width: 100%;
+	max-width: 400px;
+}
+#zeko-add-question {
+	margin-top: 8px;
+}
+
+/* ─── Assignment Editor ──────────────────────────── */
+.zeko-assignment-fields {
+	margin-top: 12px;
+}
+.zeko-assignment-fields .form-field {
+	margin-bottom: 12px;
+}
+
+/* ─── Thumbnail Upload ───────────────────────────── */
+#zeko-thumbnail-preview {
+	margin-top: 8px;
+}
+#zeko-thumbnail-preview img {
+	border: 1px solid #dcdcde;
+	border-radius: 4px;
+}
+
+/* ─── Enrollments / Certificates Table ───────────── */
+.zeko-admin-table {
+	margin-top: 12px;
+}
+.zeko-admin-table th,
+.zeko-admin-table td {
+	padding: 10px 12px;
+}
+
+/* ─── Settings Page ──────────────────────────────── */
+.zeko-settings-section {
+	margin-bottom: 24px;
+}
+.zeko-settings-section h3 {
+	margin-top: 0;
+}
+
+/* ─── Misc ───────────────────────────────────────── */
+.zeko-empty-state {
+	text-align: center;
+	padding: 40px 20px;
+	color: #646970;
+}
+.zeko-empty-state .dashicons {
+	font-size: 48px;
+	width: 48px;
+	height: 48px;
+	margin-bottom: 12px;
+	color: #c3c4c7;
+}
+.zeko-badge {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1.5;
+}
+.zeko-badge-draft { background: #f0f0f1; color: #50575e; }
+.zeko-badge-published { background: #d4edda; color: #155724; }
+.zeko-badge-archived { background: #fff3cd; color: #856404; }
+
+/* ─── Announcements Panel ──────────────────────────────────── */
+.zeko-announcements-panel {
+	margin-top: 20px;
+	padding: 16px;
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+}
+.zeko-announcements-panel h3 {
+	margin-top: 0;
+}
+.zeko-admin-announcement-form .regular-text {
+	width: 100%;
+}
+.zeko-admin-announcement-form textarea {
+	width: 100%;
+	min-height: 80px;
+}
+
+/* ─── Grade Form ───────────────────────────────────────────── */
+.zeko-grade-form {
+	display: flex;
+	gap: 8px;
+	align-items: flex-end;
+	flex-wrap: wrap;
+}
+.zeko-grade-form input[type="number"] {
+	width: 80px;
+}
+.zeko-grade-form textarea {
+	flex: 1;
+	min-height: 50px;
+}
+.zeko-grade-form .button {
+	white-space: nowrap;
+}
+
+/* ─── Status Toggle Button ─────────────────────────────────── */
+.zeko-status-toggle {
+	cursor: pointer;
+}
+.zeko-status-toggle[data-new-status="published"] {
+	color: #00a32a;
+	border-color: #00a32a;
+}
+.zeko-status-toggle[data-new-status="draft"] {
+	color: #996800;
+	border-color: #996800;
+}
+.zeko-status-toggle[data-new-status="archived"] {
+	color: #d63638;
+	border-color: #d63638;
+}

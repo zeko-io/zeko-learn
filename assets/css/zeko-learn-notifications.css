@@ -1,0 +1,544 @@
+:root {
+  --zl-primary: #4f46e5;
+  --zl-gray-50: #f9fafb;
+  --zl-gray-100: #f3f4f6;
+  --zl-gray-200: #e5e7eb;
+  --zl-gray-300: #d1d5db;
+  --zl-gray-400: #9ca3af;
+  --zl-gray-500: #6b7280;
+  --zl-gray-600: #4b5563;
+  --zl-gray-700: #374151;
+  --zl-gray-800: #1f2937;
+  --zl-gray-900: #111827;
+  --zl-radius: 8px;
+  --zl-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* ------------------------------------------
+   Bell Icon Wrapper
+   ------------------------------------------ */
+.zeko-notif-bell {
+  position: relative;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: background-color 0.15s ease;
+}
+
+.zeko-notif-bell:hover {
+  background-color: var(--zl-gray-100);
+}
+
+.zeko-notif-bell .dashicons {
+  font-size: 22px;
+  width: 22px;
+  height: 22px;
+  color: var(--zl-gray-600);
+  transition: color 0.15s ease;
+}
+
+.zeko-notif-bell:hover .dashicons {
+  color: var(--zl-primary);
+}
+
+/* ------------------------------------------
+   Badge Counter
+   ------------------------------------------ */
+.zeko-notif-badge {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 9px;
+  background-color: #dc2626;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+  pointer-events: none;
+  box-shadow: 0 0 0 2px var(--zl-gray-50);
+  transition: transform 0.2s ease;
+}
+
+.zeko-notif-badge:empty {
+  display: none;
+}
+
+.zeko-notif-badge.has-count {
+  animation: zeko-badge-pop 0.3s ease;
+}
+
+@keyframes zeko-badge-pop {
+  0%   { transform: scale(0.6); }
+  60%  { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+
+/* ------------------------------------------
+   Dropdown Panel
+   ------------------------------------------ */
+.zeko-notif-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: 380px;
+  max-height: 480px;
+  background-color: #fff;
+  border: 1px solid var(--zl-gray-200);
+  border-radius: var(--zl-radius);
+  box-shadow: var(--zl-shadow);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateY(-8px);
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.zeko-notif-dropdown.is-open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* ------------------------------------------
+   Dropdown Header
+   ------------------------------------------ */
+.zeko-notif-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--zl-gray-200);
+  flex-shrink: 0;
+}
+
+.zeko-notif-header-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--zl-gray-900);
+  margin: 0;
+}
+
+.zeko-notif-header-link {
+  font-size: 13px;
+  color: var(--zl-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.zeko-notif-header-link:hover {
+  color: var(--zl-gray-700);
+  text-decoration: underline;
+}
+
+/* ------------------------------------------
+   Module Filter Tabs
+   ------------------------------------------ */
+.zeko-notif-modules {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--zl-gray-200);
+  overflow-x: auto;
+  flex-shrink: 0;
+  scrollbar-width: thin;
+  -ms-overflow-style: none;
+}
+
+.zeko-notif-modules::-webkit-scrollbar {
+  height: 4px;
+}
+
+.zeko-notif-modules::-webkit-scrollbar-thumb {
+  background: var(--zl-gray-300);
+  border-radius: 2px;
+}
+
+.zeko-notif-module-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid var(--zl-gray-200);
+  background-color: #fff;
+  color: var(--zl-gray-600);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+  line-height: 1;
+}
+
+.zeko-notif-module-btn:hover {
+  border-color: var(--zl-gray-300);
+  background-color: var(--zl-gray-50);
+}
+
+.zeko-notif-module-btn.is-active {
+  background-color: var(--zl-primary);
+  border-color: var(--zl-primary);
+  color: #fff;
+}
+
+.zeko-notif-module-btn.is-active:hover {
+  background-color: #4338ca;
+}
+
+.zeko-notif-module-btn .dashicons {
+  font-size: 14px;
+  width: 14px;
+  height: 14px;
+  line-height: 1;
+}
+
+.zeko-notif-module-count {
+  font-size: 10px;
+  font-weight: 600;
+  background-color: var(--zl-gray-100);
+  color: var(--zl-gray-500);
+  padding: 1px 6px;
+  border-radius: 10px;
+  margin-left: 2px;
+}
+
+.zeko-notif-module-btn.is-active .zeko-notif-module-count {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* ------------------------------------------
+   Notification List
+   ------------------------------------------ */
+.zeko-notif-list {
+  flex: 1;
+  overflow-y: auto;
+  max-height: 380px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--zl-gray-300) transparent;
+}
+
+.zeko-notif-list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.zeko-notif-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.zeko-notif-list::-webkit-scrollbar-thumb {
+  background-color: var(--zl-gray-300);
+  border-radius: 3px;
+}
+
+/* ------------------------------------------
+   Individual Notification Item
+   ------------------------------------------ */
+.zeko-notif-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--zl-gray-100);
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  position: relative;
+}
+
+.zeko-notif-item:last-child {
+  border-bottom: none;
+}
+
+.zeko-notif-item:hover {
+  background-color: var(--zl-gray-50);
+}
+
+/* Unread state */
+.zeko-notif-item.is-unread {
+  border-left: 3px solid var(--zl-primary);
+  background-color: #eef2ff;
+}
+
+.zeko-notif-item.is-unread:hover {
+  background-color: #e0e7ff;
+}
+
+.zeko-notif-item.is-unread .zeko-notif-item-title {
+  font-weight: 600;
+}
+
+/* ------------------------------------------
+   Actor Avatar
+   ------------------------------------------ */
+.zeko-notif-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  background-color: var(--zl-gray-200);
+}
+
+/* ------------------------------------------
+   Content Area
+   ------------------------------------------ */
+.zeko-notif-content {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.zeko-notif-item-title {
+  font-size: 14px;
+  color: var(--zl-gray-800);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.zeko-notif-item-message {
+  font-size: 13px;
+  color: var(--zl-gray-500);
+  line-height: 1.4;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.zeko-notif-item-time {
+  font-size: 12px;
+  color: var(--zl-gray-400);
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* ------------------------------------------
+   Module Icon (inside notification item)
+   ------------------------------------------ */
+.zeko-notif-module-icon {
+  font-size: 12px;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Module-specific icon colors */
+.zeko-notif-module-icon[data-module="courses"] {
+  color: #2563eb;
+}
+
+.zeko-notif-module-icon[data-module="lessons"] {
+  color: #16a34a;
+}
+
+.zeko-notif-module-icon[data-module="quizzes"] {
+  color: #ea580c;
+}
+
+.zeko-notif-module-icon[data-module="certificates"] {
+  color: #ca8a04;
+}
+
+.zeko-notif-module-icon[data-module="achievements"] {
+  color: #9333ea;
+}
+
+/* ------------------------------------------
+   Dropdown Footer
+   ------------------------------------------ */
+.zeko-notif-footer {
+  padding: 10px 16px;
+  border-top: 1px solid var(--zl-gray-200);
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.zeko-notif-footer-link {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--zl-primary);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.zeko-notif-footer-link:hover {
+  color: #4338ca;
+  text-decoration: underline;
+}
+
+/* ------------------------------------------
+   Empty State
+   ------------------------------------------ */
+.zeko-notif-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 16px;
+  text-align: center;
+}
+
+.zeko-notif-empty-icon {
+  font-size: 40px;
+  width: 40px;
+  height: 40px;
+  color: var(--zl-gray-300);
+  margin-bottom: 12px;
+}
+
+.zeko-notif-empty-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--zl-gray-600);
+  margin: 0 0 4px;
+}
+
+.zeko-notif-empty-message {
+  font-size: 13px;
+  color: var(--zl-gray-400);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ------------------------------------------
+   Loading Spinner (inside list)
+   ------------------------------------------ */
+.zeko-notif-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+}
+
+.zeko-notif-spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid var(--zl-gray-200);
+  border-top-color: var(--zl-primary);
+  border-radius: 50%;
+  animation: zeko-spin 0.6s linear infinite;
+}
+
+@keyframes zeko-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ------------------------------------------
+   Responsive: Mobile (< 420px)
+   ------------------------------------------ */
+@media (max-width: 420px) {
+  .zeko-notif-dropdown {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 0;
+    border: none;
+  }
+
+  .zeko-notif-dropdown.is-open {
+    transform: translateY(0);
+  }
+
+  .zeko-notif-list {
+    max-height: none;
+    flex: 1;
+  }
+
+  .zeko-notif-modules {
+    padding: 8px 12px;
+  }
+
+  .zeko-notif-module-btn {
+    padding: 5px 10px;
+    font-size: 11px;
+  }
+}
+
+/* ------------------------------------------
+   Floating Bell (bottom-left)
+   ------------------------------------------ */
+.zeko-notif-bell-floating {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 9999;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--zl-primary);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(79, 70, 229, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.zeko-notif-bell-floating:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 24px rgba(79, 70, 229, 0.45);
+}
+
+.zeko-notif-bell-floating .dashicons {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+  color: #fff;
+}
+
+.zeko-notif-bell-floating .zeko-notif-badge {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  background: #ef4444;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  min-width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 0 5px;
+  border: 2px solid #fff;
+  animation: zeko-notif-badge-pop 0.3s ease;
+}
+
+/* Float the dropdown above the bell */
+.zeko-notif-bell-floating .zeko-notif-dropdown {
+  position: absolute;
+  bottom: 64px;
+  left: 0;
+  transform: translateY(8px);
+}
+
+@media (max-width: 420px) {
+  .zeko-notif-bell-floating {
+    bottom: 16px;
+    left: 16px;
+    width: 48px;
+    height: 48px;
+  }
+}
