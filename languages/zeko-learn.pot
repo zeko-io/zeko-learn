@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zeko-learn 1.0.0\n"
 "Report-Msgid-Bugs-To: https://zeko.io\n"
-"POT-Creation-Date: 2026-09-25 08:10+00:00\n"
+"POT-Creation-Date: 2026-09-27 15:06+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -143,7 +143,7 @@ msgstr ""
 msgid "Add Section"
 msgstr ""
 
-#: templates/lesson.php:287
+#: templates/lesson.php:293
 msgid "Add any notes about your submission..."
 msgstr ""
 
@@ -194,7 +194,7 @@ msgstr ""
 msgid "Allowed File Types"
 msgstr ""
 
-#: templates/lesson.php:244
+#: templates/lesson.php:250
 msgid "Allowed File Types:"
 msgstr ""
 
@@ -341,7 +341,7 @@ msgid "Bold"
 msgstr ""
 
 #: includes/public/class-zeko-learn-public.php:590
-#: templates/course-player.php:182 templates/lesson.php:325
+#: templates/course-player.php:182 templates/lesson.php:331
 msgid "Bookmark"
 msgstr ""
 
@@ -502,7 +502,7 @@ msgid "Complete courses to earn certificates!"
 msgstr ""
 
 #: includes/admin/class-zeko-learn-admin.php:693
-#: templates/course-player.php:175 templates/lesson.php:317
+#: templates/course-player.php:175 templates/lesson.php:323
 #: templates/student-dashboard.php:144 templates/student-dashboard.php:188
 msgid "Completed"
 msgstr ""
@@ -666,7 +666,7 @@ msgstr ""
 #: includes/class-zeko-learn-ecosystem.php:304
 #: includes/public/class-zeko-learn-public.php:1223
 #: templates/instructor-dashboard.php:265 templates/single-course.php:359
-#: zeko-learn.php:89
+#: zeko-learn.php:90
 msgid "Courses"
 msgstr ""
 
@@ -854,7 +854,7 @@ msgstr ""
 msgid "Download Attachment"
 msgstr ""
 
-#: templates/lesson.php:300
+#: templates/lesson.php:306
 msgid "Download File"
 msgstr ""
 
@@ -866,7 +866,7 @@ msgstr ""
 msgid "Draft"
 msgstr ""
 
-#: templates/lesson.php:281
+#: templates/lesson.php:287
 msgid "Drag & drop your file here or click to browse"
 msgstr ""
 
@@ -875,7 +875,7 @@ msgstr ""
 msgid "Due Date"
 msgstr ""
 
-#: templates/lesson.php:247
+#: templates/lesson.php:253
 msgid "Due Date:"
 msgstr ""
 
@@ -928,7 +928,7 @@ msgid ""
 "privacy policy."
 msgstr ""
 
-#: includes/public/class-zeko-learn-public.php:431 templates/lesson.php:164
+#: includes/public/class-zeko-learn-public.php:431 templates/lesson.php:170
 #: templates/single-course.php:152
 msgid "Enroll Now"
 msgstr ""
@@ -937,7 +937,7 @@ msgstr ""
 msgid "Enroll in this course"
 msgstr ""
 
-#: includes/public/class-zeko-learn-public.php:615 templates/lesson.php:162
+#: includes/public/class-zeko-learn-public.php:615 templates/lesson.php:164
 msgid "Enroll in this course to access this lesson."
 msgstr ""
 
@@ -1014,7 +1014,7 @@ msgstr ""
 msgid "Feedback"
 msgstr ""
 
-#: includes/class-zeko-learn-emails.php:252 templates/lesson.php:268
+#: includes/class-zeko-learn-emails.php:252 templates/lesson.php:274
 msgid "Feedback:"
 msgstr ""
 
@@ -1140,11 +1140,11 @@ msgstr ""
 msgid "Grade export ready."
 msgstr ""
 
-#: includes/class-zeko-learn-emails.php:249 templates/lesson.php:266
+#: includes/class-zeko-learn-emails.php:249 templates/lesson.php:272
 msgid "Grade:"
 msgstr ""
 
-#: templates/lesson.php:265
+#: templates/lesson.php:271
 msgid "Graded"
 msgstr ""
 
@@ -1211,7 +1211,7 @@ msgstr ""
 msgid "Instructor"
 msgstr ""
 
-#: zeko-learn.php:97
+#: zeko-learn.php:98
 msgid "Instructor Dashboard"
 msgstr ""
 
@@ -1447,7 +1447,7 @@ msgstr ""
 msgid "Loading..."
 msgstr ""
 
-#: includes/public/class-zeko-learn-public.php:434 templates/lesson.php:166
+#: includes/public/class-zeko-learn-public.php:434 templates/lesson.php:172
 #: templates/single-course.php:155
 msgid "Log in to Enroll"
 msgstr ""
@@ -1467,7 +1467,7 @@ msgid "Mark all as read"
 msgstr ""
 
 #: includes/public/class-zeko-learn-public.php:589
-#: templates/course-player.php:176 templates/lesson.php:320
+#: templates/course-player.php:176 templates/lesson.php:326
 msgid "Mark as Complete"
 msgstr ""
 
@@ -1475,7 +1475,7 @@ msgstr ""
 msgid "Mark as featured course"
 msgstr ""
 
-#: templates/course-player.php:171 templates/lesson.php:319
+#: templates/course-player.php:171 templates/lesson.php:325
 msgid "Mark lesson as complete"
 msgstr ""
 
@@ -1508,7 +1508,7 @@ msgstr ""
 msgid "Max Attempts"
 msgstr ""
 
-#: templates/lesson.php:213
+#: templates/lesson.php:219
 msgid "Max Attempts:"
 msgstr ""
 
@@ -1516,7 +1516,7 @@ msgstr ""
 msgid "Max File Size (MB)"
 msgstr ""
 
-#: templates/lesson.php:241
+#: templates/lesson.php:247
 msgid "Max File Size:"
 msgstr ""
 
@@ -1552,7 +1552,7 @@ msgid "Most Popular"
 msgstr ""
 
 #: includes/public/class-zeko-learn-public.php:818
-#: templates/student-dashboard.php:212 zeko-learn.php:101
+#: templates/student-dashboard.php:212 zeko-learn.php:102
 msgid "My Certificates"
 msgstr ""
 
@@ -1563,11 +1563,11 @@ msgstr ""
 #: includes/class-zeko-learn-ecosystem.php:253
 #: includes/class-zeko-learn-ecosystem.php:290
 #: includes/class-zeko-learn-ecosystem.php:321
-#: includes/public/class-zeko-learn-public.php:786 zeko-learn.php:93
+#: includes/public/class-zeko-learn-public.php:786 zeko-learn.php:94
 msgid "My Learning"
 msgstr ""
 
-#: templates/lesson.php:333
+#: templates/lesson.php:339
 msgid "My Notes"
 msgstr ""
 
@@ -1623,7 +1623,7 @@ msgstr ""
 msgid "Newest"
 msgstr ""
 
-#: templates/lesson.php:224
+#: templates/lesson.php:230
 msgid "Next"
 msgstr ""
 
@@ -1750,7 +1750,7 @@ msgstr ""
 msgid "No thumbnail set"
 msgstr ""
 
-#: templates/lesson.php:211
+#: templates/lesson.php:217
 msgid "No time limit"
 msgstr ""
 
@@ -1776,7 +1776,7 @@ msgstr ""
 msgid "Notes"
 msgstr ""
 
-#: templates/lesson.php:286
+#: templates/lesson.php:292
 msgid "Notes (optional)"
 msgstr ""
 
@@ -1850,7 +1850,7 @@ msgstr ""
 msgid "Passing Score (%)"
 msgstr ""
 
-#: templates/lesson.php:212
+#: templates/lesson.php:218
 msgid "Passing Score:"
 msgstr ""
 
@@ -2015,7 +2015,7 @@ msgstr ""
 msgid "Preview"
 msgstr ""
 
-#: templates/lesson.php:223
+#: templates/lesson.php:229
 msgid "Previous"
 msgstr ""
 
@@ -2283,7 +2283,7 @@ msgstr ""
 msgid "Save Course"
 msgstr ""
 
-#: templates/lesson.php:348
+#: templates/lesson.php:354
 msgid "Save Note"
 msgstr ""
 
@@ -2450,7 +2450,7 @@ msgstr ""
 msgid "Start Learning"
 msgstr ""
 
-#: templates/lesson.php:215
+#: templates/lesson.php:221
 msgid "Start Quiz"
 msgstr ""
 
@@ -2512,7 +2512,7 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: templates/lesson.php:289
+#: templates/lesson.php:295
 msgid "Submit Assignment"
 msgstr ""
 
@@ -2520,7 +2520,7 @@ msgstr ""
 msgid "Submit Grade"
 msgstr ""
 
-#: includes/public/class-zeko-learn-public.php:173 templates/lesson.php:225
+#: includes/public/class-zeko-learn-public.php:173 templates/lesson.php:231
 msgid "Submit Quiz"
 msgstr ""
 
@@ -2530,7 +2530,7 @@ msgid "Submit Review"
 msgstr ""
 
 #: includes/admin/class-zeko-learn-admin.php:1401
-#: templates/instructor-dashboard.php:317 templates/lesson.php:258
+#: templates/instructor-dashboard.php:317 templates/lesson.php:264
 msgid "Submitted"
 msgstr ""
 
@@ -2552,7 +2552,7 @@ msgstr ""
 msgid "System"
 msgstr ""
 
-#: templates/lesson.php:347
+#: templates/lesson.php:353
 msgid "Take a note at current timestamp..."
 msgstr ""
 
@@ -2612,7 +2612,7 @@ msgstr ""
 msgid "This cannot be undone. Real user data will not be affected."
 msgstr ""
 
-#: includes/public/class-zeko-learn-public.php:614 templates/lesson.php:161
+#: includes/public/class-zeko-learn-public.php:614 templates/lesson.php:163
 msgid "This content is locked"
 msgstr ""
 
@@ -2652,7 +2652,7 @@ msgstr ""
 msgid "Time Limit (minutes)"
 msgstr ""
 
-#: templates/lesson.php:211
+#: templates/lesson.php:217
 msgid "Time Limit:"
 msgstr ""
 
@@ -2728,7 +2728,7 @@ msgstr ""
 msgid "Unknown"
 msgstr ""
 
-#: templates/lesson.php:213
+#: templates/lesson.php:219
 msgid "Unlimited"
 msgstr ""
 
@@ -2767,7 +2767,7 @@ msgstr ""
 msgid "Upload Thumbnail"
 msgstr ""
 
-#: templates/lesson.php:277
+#: templates/lesson.php:283
 msgid "Upload your submission"
 msgstr ""
 
@@ -3054,7 +3054,7 @@ msgid "Zeko Learn — Wishlist"
 msgstr ""
 
 #: includes/public/class-zeko-learn-public.php:794
-#: templates/course-player.php:79 templates/lesson.php:118
+#: templates/course-player.php:79 templates/lesson.php:120
 #: templates/student-dashboard.php:566
 msgid "complete"
 msgstr ""
@@ -3126,7 +3126,7 @@ msgstr ""
 msgid "level"
 msgstr ""
 
-#: templates/course-player.php:147 templates/lesson.php:177
+#: templates/course-player.php:147 templates/lesson.php:183
 #: templates/single-course.php:249
 msgid "min"
 msgstr ""
