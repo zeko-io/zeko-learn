@@ -1028,7 +1028,9 @@ class Zeko_Learn_DB {
 			array( '%d', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%d', '%s', '%s', '%s', '%f', '%d', '%f', '%f', '%d', '%s', '%d', '%s', '%s', '%s', '%s' )
 		);
 		$this->flush_cache();
-		return (int) $this->wpdb->insert_id;
+		$course_id = (int) $this->wpdb->insert_id;
+		do_action( 'zeko_learn_course_created', $course_id, (int) $data['instructor_id'], $data );
+		return $course_id;
 	}
 
 	// ─── Section Queries ─────────────────────────────────────────.
